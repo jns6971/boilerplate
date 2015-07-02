@@ -1,0 +1,111 @@
+//styleguide
+
+body{
+	color: $rs-text-dark;
+	font-family: $rs-font;
+}
+
+h1, .h1{
+	font-size: $h1;
+	line-height: 1em;
+	font-family: $rs-font;
+	text-transform: uppercase;
+	margin: 0 0 $rs-spacing-sm;
+}
+
+h2, .h2{
+	font-size: $h2;
+	line-height: 1em;
+	color: $rs-primary-color;
+	text-transform: uppercase;
+	margin: 0 0 $rs-spacing-sm;
+}
+
+h3, .h3{
+	font-size: $h3;
+	line-height: 1em;
+	color: $rs-primary-color;
+	margin: 0 0 ($rs-spacing-sm /2);
+}
+
+h4, .h4{
+	font-size: $h4;
+	line-height: $rs-spacing-sm * 2;
+	font-family: $rs-font-bold;
+}
+
+h5, .h5{
+	font-size: $h5;
+	line-height: $rs-spacing-sm * 2;
+	color: $rs-text-med;
+}
+
+h6, .h6{
+	font-size: $h6;
+	line-height: 1em;
+}
+
+span, .span{
+	font-size: $rs-text-size;
+	line-height: 1em;
+}
+
+ul, .ul{
+	line-height: $rs-spacing-sm * 2;
+}
+
+li, .li{
+	
+}
+
+a, .a{
+	color: $rs-primary-color;
+	text-decoration: none;
+	@include transition(color, 0.2s, ease-in-out);
+
+	&:hover{
+		color: $rs-text-dark;
+	}
+
+	&.inverted{
+		color: $rs-text-dark;
+
+		&:hover{
+			color: $rs-primary-color;
+		}
+	}
+}
+
+p, .p{
+	line-height: $rs-spacing-sm * 2;
+	font-size: $rs-text-size;
+	color: $rs-text-dark;
+	padding-bottom: $rs-spacing-sm * 2;
+}
+
+//custom styles 
+.icon-arrow{
+	@extend .icon-triangle-down;
+
+	&.closed{
+		@extend .icon-triangle-right;
+	}
+
+	&.open{
+		@extend .icon-triangle-down;
+	}
+}
+
+.no-js{
+	.icon-arrow{
+		@extend .icon-triangle-down;
+
+		&.closed{
+			@extend .icon-triangle-down;
+		}
+
+		&.open{
+			@extend .icon-triangle-down;
+		}
+	}
+}

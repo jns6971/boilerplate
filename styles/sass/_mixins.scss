@@ -1,0 +1,129 @@
+
+
+@mixin visuallyhidden{
+	overflow: hidden;
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0; border: 0;
+	display: none;
+}
+
+.visuallyhidden{
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0; border: 0;
+    display: none;
+}
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+    $max: length($values);
+    $pxValues: '';
+    $remValues: '';
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $pxValues: #{$pxValues + $value*16}px;
+
+        @if $i < $max {
+          $pxValues: #{$pxValues + " "};
+        }
+    }
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $remValues: #{$remValues + $value}rem;
+
+        @if $i < $max {
+            $remValues: #{$remValues + " "};
+        }
+    }
+
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
+}
+
+// @include transition(color, 0.2s, ease-in-out);
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin round-corners($amount) {
+    border-radius: $amount;
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset:"") {
+    -webkit-box-shadow: $top $left $blur $spread $color #{$inset};
+    -moz-box-shadow: $top $left $blur $spread $color #{$inset};
+    box-shadow: $top $left $blur $spread $color #{$inset};
+}
+
+@mixin placeholder {
+     &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin user-select($var){
+    -webkit-touch-callout: $var;
+    -webkit-user-select: $var;
+    -khtml-user-select: $var;
+    -moz-user-select: $var;
+    -ms-user-select: $var;
+    user-select: $var;
+}
+
+
+@mixin rotate($rotate: 0) {
+  -webkit-transform: rotate($rotate +deg);
+  -moz-transform:    rotate($rotate +deg);
+  -ms-transform:     rotate($rotate +deg);
+  -o-transform:      rotate($rotate +deg);
+  transform:         rotate($rotate +deg);
+}
+@mixin scale($scale: 1) {
+  -webkit-transform: scale($scale);
+  -moz-transform:    scale($scale);
+  -ms-transform:     scale($scale);
+  -o-transform:      scale($scale);
+  transform:         scale($scale);
+}
+@mixin skew($skew: 0) {
+  -webkit-transform: skew($skew +deg);
+  -moz-transform:    skew($skew +deg);
+  -ms-transform:     skew($skew +deg);
+  -o-transform:      skew($skew +deg);
+  transform:         skew($skew +deg);
+}
+@mixin translate($left: 0, $top: 0) {
+  -webkit-transform: translate($left +px, $top +px);
+  -moz-transform:    translate($left +px, $top +px);
+  -ms-transform:     translate($left +px, $top +px);
+  -o-transform:      translate($left +px, $top +px);
+  transform:         translate($left +px, $top +px);
+}
+// @include rotate(15);          rotates object 15 degrees
+// @include scale(1.5);          scales object 50% up
+// @include skew(12);            skews object 12 degrees
+// @include translate(10, -20);  moves object 10px left, -20px top
