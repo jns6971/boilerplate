@@ -3,55 +3,58 @@
 body{
 	color: $rs-text-dark;
 	font-family: $rs-font;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $rs-primary-color;
 }
 
 h1, .h1{
-	font-size: $h1;
+	font-size: $h1-size;
 	line-height: 1em;
 	font-family: $rs-font;
 	text-transform: uppercase;
-	margin: 0 0 $rs-spacing-sm;
+	margin: 0 0 $base-spacing-unit-custom;
 }
 
 h2, .h2{
-	font-size: $h2;
+	font-size: $h2-size;
 	line-height: 1em;
 	color: $rs-primary-color;
 	text-transform: uppercase;
-	margin: 0 0 $rs-spacing-sm;
+	margin: 0 0 $base-spacing-unit-custom;
 }
 
 h3, .h3{
-	font-size: $h3;
+	font-size: $h3-size;
 	line-height: 1em;
 	color: $rs-primary-color;
-	margin: 0 0 ($rs-spacing-sm /2);
+	margin: 0 0 $base-spacing-unit-custom;
 }
 
 h4, .h4{
-	font-size: $h4;
-	line-height: $rs-spacing-sm * 2;
+	font-size: $h4-size;
+	line-height: 1em;
 	font-family: $rs-font-bold;
 }
 
 h5, .h5{
-	font-size: $h5;
-	line-height: $rs-spacing-sm * 2;
+	font-size: $h5-size;
+	line-height: 1em;
 	color: $rs-text-med;
 }
 
 h6, .h6{
-	font-size: $h6;
+	font-size: $h6-size;
 	line-height: 1em;
 }
 
 span, .span{
-	font-size: $rs-text-size;
-	line-height: 1em;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
 }
 
 ul, .ul{
-	line-height: $rs-spacing-sm * 2;
+	line-height: $base-spacing-unit-custom;
 }
 
 li, .li{
@@ -77,35 +80,13 @@ a, .a{
 }
 
 p, .p{
-	line-height: $rs-spacing-sm * 2;
-	font-size: $rs-text-size;
+	line-height: $base-line-height;
+	font-size: $base-font-size;
 	color: $rs-text-dark;
-	padding-bottom: $rs-spacing-sm * 2;
+	padding-bottom: $base-spacing-unit-custom;
 }
 
-//custom styles 
-.icon-arrow{
-	@extend .icon-triangle-down;
-
-	&.closed{
-		@extend .icon-triangle-right;
-	}
-
-	&.open{
-		@extend .icon-triangle-down;
-	}
-}
 
 .no-js{
-	.icon-arrow{
-		@extend .icon-triangle-down;
-
-		&.closed{
-			@extend .icon-triangle-down;
-		}
-
-		&.open{
-			@extend .icon-triangle-down;
-		}
-	}
+	
 }

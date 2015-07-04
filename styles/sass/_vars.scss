@@ -1,3 +1,9 @@
+//inuit defaults
+$base-spacing-unit: 40px;
+$base-spacing-unit-custom: 10px;
+$base-font-family: 'Lato_regular', sans-serif;
+
+
 //colors
 
 $rs-primary-color: #69bec3;
@@ -16,29 +22,7 @@ $rs-section-alt-bg: #f5f5f5;
 
 
 //font
-$rs-font: Lato, sans-serif;
-$rs-font-bold: Lato, sans-serif;
-$rs-font-italic: Lato, sans-serif;
-$rs-font-italic-bold: Lato, sans-serif;
+$rs-font: 'Lato_regular', sans-serif;
+$rs-font-bold: 'Lato_bold', sans-serif;
+$rs-font-italic: 'Lato_italic', sans-serif;
 
-//breakpoints
-$break-x-small: 320px;
-$break-small: 640px;
-$break-med: 768px;
-$break-large: 960px;
-
-//spacing
-$rs-spacing-lg: 64px;
-$rs-spacing-sm: 12px;
-
-//sizes
-$h1: 48px;
-$h1-small: 36px;
-$h2: 20px;
-$h2-small: 18px;
-$h3: 18px;
-$h4: 16px;
-$h5: 14px;
-$h6: 12px;
-
-$rs-text-size: 16px;
