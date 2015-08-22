@@ -1,7 +1,7 @@
 # Boilerplate
 
 ## Setup
-- cd to directory
+- ```cd``` to new project directory
 - ```sudo npm install```
 - run ```grunt```
 
