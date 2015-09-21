@@ -37,24 +37,28 @@ table {
   src: url("/fonts/lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/lato/Lato-Regular.woff2") format("woff2"), url("/fonts/lato/Lato-Regular.woff") format("woff"), url("/fonts/lato/Lato-Regular.ttf") format("truetype"), url("/fonts/lato/Lato-Regular.svg#pt_sansbold") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Lato_italic';
   src: url("/fonts/lato/Lato-Italic.eot");
   src: url("/fonts/lato/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/lato/Lato-Italic.woff2") format("woff2"), url("/fonts/lato/Lato-Italic.woff") format("woff"), url("/fonts/lato/Lato-Italic.ttf") format("truetype"), url("/fonts/lato/Lato-Italic.svg#pt_sansitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Lato_bold';
   src: url("/fonts/lato/Lato-Boldt.eot");
   src: url("/fonts/lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/lato/Lato-Bold.woff2") format("woff2"), url("/fonts/lato/Lato-Bold.woff") format("woff"), url("/fonts/lato/Lato-Bold.ttf") format("truetype"), url("/fonts/lato/Lato-Bold.svg#pt_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("/fonts/icons/icomoon.eot?iwcs12");
   src: url("/fonts/icons/icomoon.eot?#iefixiwcs12") format("embedded-opentype"), url("/fonts/icons/icomoon.woff?iwcs12") format("woff"), url("/fonts/icons/icomoon.ttf?iwcs12") format("truetype"), url("/fonts/icons/icomoon.svg?iwcs12#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -91,8 +95,7 @@ table {
 .icon-phone:before {
   content: "\e602"; }
 
-/*------------------------------------*\
-    INUIT.CSS
+/*------------------------------------*    INUIT.CSS
 \*------------------------------------*/
 /*!*
  *
@@ -141,8 +144,7 @@ table {
  *
  * Thank you for choosing inuit.css. May your web fonts render perfectly.
  */
-/*------------------------------------*\
-    $CONTENTS
+/*------------------------------------*    $CONTENTS
 \*------------------------------------*/
 /**
  * CONTENTS............You’re reading it!
@@ -198,8 +200,7 @@ table {
  * HELPER..............A series of helper classes to use arbitrarily
  * DEBUG...............Enable to add visual flags for debugging purposes
  */
-/*------------------------------------*\
-    $WARNING
+/*------------------------------------*    $WARNING
 \*------------------------------------*/
 /*
  * inuit.css, being an OO framework, works in keeping with the open/closed
@@ -213,35 +214,30 @@ table {
  * Try not to edit any CSS beyond this point; if you find you need to do so
  * it is a failing of the framework so please tweet at @inuitcss.
  */
-/*------------------------------------*\
-    $IMPORTS
+/*------------------------------------*    $IMPORTS
 \*------------------------------------*/
 /**
  * Generic utility styles etc.
  */
-/*------------------------------------*\
-    $DEFAULTS
+/*------------------------------------*    $DEFAULTS
 \*------------------------------------*/
 /**
  * inuit.css’ default variables. Redefine these in your `_vars.scss` file (found
  * in the inuit.css-web-template) to override them.
  */
-/*------------------------------------*\
-    $DEBUG
+/*------------------------------------*    $DEBUG
 \*------------------------------------*/
 /**
  * Debug mode will visually highlight any potential markup/accessibility quirks
  * in the browser. Set to `true` or `false`.
  */
-/*------------------------------------*\
-    $BORDER-BOX
+/*------------------------------------*    $BORDER-BOX
 \*------------------------------------*/
 /**
  * Do you want all elements to adopt `box-sizing:border-box;` as per
  * paulirish.com/2012/box-sizing-border-box-ftw ?
  */
-/*------------------------------------*\
-    $BASE
+/*------------------------------------*    $BASE
 \*------------------------------------*/
 /**
  * Base stuff
@@ -252,8 +248,7 @@ table {
 /**
  * Default colour for objects’ borders etc.
  */
-/*------------------------------------*\
-    $RESPONSIVE
+/*------------------------------------*    $RESPONSIVE
 \*------------------------------------*/
 /**
  * Responsiveness?
@@ -275,14 +270,12 @@ table {
 /**
  * Tell inuit.css when breakpoints start.
  */
-/*------------------------------------*\
-    $FONT-SIZES
+/*------------------------------------*    $FONT-SIZES
 \*------------------------------------*/
 /**
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
-/*------------------------------------*\
-    $QUOTES
+/*------------------------------------*    $QUOTES
 \*------------------------------------*/
 /**
  * English quote marks?
@@ -294,8 +287,7 @@ table {
 /**
  * If you need non-English quotes, please alter the following values accordingly:
  */
-/*------------------------------------*\
-    $BRAND
+/*------------------------------------*    $BRAND
 \*------------------------------------*/
 /**
  * Brand stuff
@@ -303,22 +295,19 @@ table {
 /**
  * How big would you like round corners to be by default?
  */
-/*------------------------------------*\
-    $OBJECTS AND ABSTRACTIONS
+/*------------------------------------*    $OBJECTS AND ABSTRACTIONS
 \*------------------------------------*/
 /**
  * Which objects and abstractions would you like to use?
  */
-/*------------------------------------*\
-    $FRAMEWORK
+/*------------------------------------*    $FRAMEWORK
 \*------------------------------------*/
 /**
  * inuit.css will work these next ones out for use within the framework.
  *
  * Assign our `$base-line-height` to a new spacing var for more transparency.
  */
-/*------------------------------------*\
-    $MIXINS
+/*------------------------------------*    $MIXINS
 \*------------------------------------*/
 /**
  * Create a fully formed type style (sizing and vertical rhythm) by passing in a
@@ -687,8 +676,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -762,17 +750,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*------------------------------------*\
-    $RESET
+/*------------------------------------*    $RESET
 \*------------------------------------*/
 /**
  * A more considered reset; more of a restart...
  * As per: csswizardry.com/2011/10/reset-restarted
  */
 /**
-* Let’s make the box model all nice, shall we...?
-*/
-*, *:before, *:after {
+    * Let’s make the box model all nice, shall we...?
+    */
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -833,8 +822,7 @@ textarea:focus {
   cursor: text;
   outline: none; }
 
-/*------------------------------------*\
-    $CLEARFIX
+/*------------------------------------*    $CLEARFIX
 \*------------------------------------*/
 /**
  * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
@@ -846,8 +834,7 @@ textarea:focus {
   display: table;
   clear: both; }
 
-/*------------------------------------*\
-    $SHARED
+/*------------------------------------*    $SHARED
 \*------------------------------------*/
 /**
  * Where `margin-bottom` is concerned, this value will be the same as the
@@ -869,15 +856,16 @@ pre,
 .islet {
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
-  .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
-  ul, .islet ol, .islet dl, .islet
-  blockquote, .islet p, .islet address, .islet
-  table, .islet
-  fieldset, .islet figure, .islet
-  pre, .islet .form-fields > li, .islet
-  .media, .islet
-  .island, .islet
-  .islet {
+  .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup,
+  .islet ul, .islet ol, .islet dl,
+  .islet blockquote, .islet p, .islet address,
+  .islet table,
+  .islet fieldset, .islet figure,
+  .islet pre,
+  .islet .form-fields > li,
+  .islet .media,
+  .islet .island,
+  .islet .islet {
     margin-bottom: 12px;
     margin-bottom: 0.75rem; }
 
@@ -907,16 +895,14 @@ ul, ol, dd {
 /**
  * Base styles; unclassed HTML elements etc.
  */
-/*------------------------------------*\
-    $MAIN
+/*------------------------------------*    $MAIN
 \*------------------------------------*/
 html {
   font: 1em/1.5 sans-serif;
   overflow-y: scroll;
   min-height: 100%; }
 
-/*------------------------------------*\
-    $HEADINGS
+/*------------------------------------*    $HEADINGS
 \*------------------------------------*/
 /**
  * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
@@ -987,8 +973,7 @@ hgroup .hN {
   font-size: 3rem;
   line-height: 1; }
 
-/*------------------------------------*\
-    $PARAGRAPHS
+/*------------------------------------*    $PARAGRAPHS
 \*------------------------------------*/
 /**
  * The `.lede` class is used to make the introductory text (usually a paragraph)
@@ -1000,8 +985,7 @@ hgroup .hN {
   font-size: 1.125rem;
   line-height: 1.33333; }
 
-/*------------------------------------*\
-    $SMALLPRINT
+/*------------------------------------*    $SMALLPRINT
 \*------------------------------------*/
 /**
  * A series of classes for setting tiny type; for use in smallprint etc.
@@ -1017,8 +1001,7 @@ hgroup .hN {
   font-size: 0.625rem;
   line-height: 2.4; }
 
-/*------------------------------------*\
-    $QUOTES
+/*------------------------------------*    $QUOTES
 \*------------------------------------*/
 /**
  * If English quotes are set in `_vars.scss`, define them here.
@@ -1073,8 +1056,8 @@ blockquote {
  */
 blockquote {
   /**
-   * .4em is roughly equal to the width of the opening “ that we wish to hang.
-   */
+     * .4em is roughly equal to the width of the opening “ that we wish to hang.
+     */
   text-indent: -0.41em; }
   blockquote p:last-of-type {
     margin-bottom: 0; }
@@ -1085,8 +1068,7 @@ blockquote {
   .source:before {
     content: "\2014"; }
 
-/*------------------------------------*\
-    $CODE
+/*------------------------------------*    $CODE
 \*------------------------------------*/
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
@@ -1107,8 +1089,8 @@ pre mark {
  */
 .code-comment {
   /**
-   * Override this setting in your theme stylesheet
-   */
+     * Override this setting in your theme stylesheet
+     */
   opacity: 0.75;
   filter: alpha(opacity=75); }
 
@@ -1149,8 +1131,7 @@ pre mark {
   white-space: pre;
   /* [4] */ }
 
-/*------------------------------------*\
-    $IMAGES
+/*------------------------------------*    $IMAGES
 \*------------------------------------*/
 /**
  * Demo: jsfiddle.net/inuitcss/yMtur
@@ -1214,8 +1195,7 @@ img[height] {
 figure > img {
   display: block; }
 
-/*------------------------------------*\
-    $LISTS
+/*------------------------------------*    $LISTS
 \*------------------------------------*/
 /**
  * Remove vertical spacing from nested lists.
@@ -1231,8 +1211,7 @@ li > ol {
 .numbered-list {
   list-style-type: decimal; }
 
-/*------------------------------------*\
-    $TABLES
+/*------------------------------------*    $TABLES
 \*------------------------------------*/
 /**
  * We have a lot at our disposal for making very complex table constructs, e.g.:
@@ -1417,8 +1396,10 @@ td {
   .table--bordered th:empty,
   .table--bordered td:empty {
     border: none; }
+
 .table--bordered thead tr:last-child th {
   border-bottom-width: 2px; }
+
 .table--bordered tbody tr th:last-of-type {
   border-right-width: 2px; }
 
@@ -1435,8 +1416,7 @@ td {
 .table--data {
   font: 12px/1.5 sans-serif; }
 
-/*------------------------------------*\
-    $FORMS
+/*------------------------------------*    $FORMS
 \*------------------------------------*/
 /**
  *
@@ -1459,8 +1439,8 @@ fieldset {
 .text-input,
 textarea {
   /**
-   * Style these via your theme stylesheet.
-   */ }
+     * Style these via your theme stylesheet.
+     */ }
 
 /**
  * Group sets of form fields in a list, e.g.:
@@ -1519,11 +1499,11 @@ label,
   display: block; }
 
 /**
- * Extra help text in `label`s, e.g.:
- *
-   <label>Card number <small class=additional>No spaces</small></label>
- *
- */
+     * Extra help text in `label`s, e.g.:
+     *
+       <label>Card number <small class=additional>No spaces</small></label>
+     *
+     */
 .additional {
   display: block;
   font-weight: normal; }
@@ -1548,8 +1528,8 @@ label,
   margin: 0; }
 
 /*
- * Labels in check-lists
- */
+     * Labels in check-lists
+     */
 .check-label,
 .check-list label,
 .check-list .label {
@@ -1598,8 +1578,7 @@ label,
 /**
  * Objects and abstractions
  */
-/*------------------------------------*\
-    $GRIDS
+/*------------------------------------*    $GRIDS
 \*------------------------------------*/
 /**
  * Fluid and nestable grid system, e.g.:
@@ -1640,14 +1619,14 @@ label,
   margin-bottom: 0; }
 
 /**
- * Very infrequently occuring grid wrappers as children of grid wrappers.
- */
+     * Very infrequently occuring grid wrappers as children of grid wrappers.
+     */
 .grid > .grid, .grid--rev > .grid, .grid--full > .grid, .grid--center > .grid, .grid > .grid--rev, .grid--rev > .grid--rev, .grid--full > .grid--rev, .grid--center > .grid--rev, .grid > .grid--full, .grid--rev > .grid--full, .grid--full > .grid--full, .grid--center > .grid--full, .grid > .grid--center, .grid--rev > .grid--center, .grid--full > .grid--center, .grid--center > .grid--center {
   margin-left: 0; }
 
 /**
- * Grid
- */
+     * Grid
+     */
 .grid__item {
   /*display:inline-block;*/
   float: left;
@@ -1656,8 +1635,8 @@ label,
   vertical-align: top; }
 
 /**
- * Reversed grids
- */
+     * Reversed grids
+     */
 .grid--rev {
   direction: rtl;
   text-align: right; }
@@ -1666,24 +1645,23 @@ label,
     text-align: left; }
 
 /**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- */
+     * Gutterless grids have all the properties of regular grids, minus any spacing.
+     */
 .grid--full {
   margin-left: 0; }
   .grid--full > .grid__item {
     padding-left: 0; }
 
 /**
- * Centered grids align grid items centrally without needing to use push or pull
- * classes.
- */
+     * Centered grids align grid items centrally without needing to use push or pull
+     * classes.
+     */
 .grid--center {
   text-align: center; }
   .grid--center > .grid__item {
     text-align: left; }
 
-/*------------------------------------*\
-    $SPLIT
+/*------------------------------------*    $SPLIT
 \*------------------------------------*/
 /**
  * Simple split item for creating two elements floated away from one another,
@@ -1717,8 +1695,7 @@ label,
   float: left;
   clear: left; }
 
-/*------------------------------------*\
-    $THIS-OR-THIS
+/*------------------------------------*    $THIS-OR-THIS
 \*------------------------------------*/
 /**
  * Simple options object to provide multiple choices, e.g.:
@@ -1751,8 +1728,7 @@ label,
   display: table-cell;
   vertical-align: middle; }
 
-/*------------------------------------*\
-    $ARROWS
+/*------------------------------------*    $ARROWS
 \*------------------------------------*/
 /**
  * It is a common design treatment to give an element a triangular points-out
@@ -1765,8 +1741,7 @@ label,
 /**
  * Define individual edges so we can combine what we need, when we need.
  */
-/*------------------------------------*\
-    $BEAUTONS.CSS
+/*------------------------------------*    $BEAUTONS.CSS
 \*------------------------------------*/
 /**
  * beautons is a beautifully simple button toolkit.
@@ -1793,8 +1768,7 @@ label,
  * @csswizardry -- csswizardry.com/beautons
  *
  */
-/*------------------------------------*\
-    $BASE
+/*------------------------------------*    $BASE
 \*------------------------------------*/
 /**
  * Base button styles.
@@ -1841,14 +1815,15 @@ label,
   border-radius: 0px;
   /* [8] */ }
 
-.btn, .btn:hover {
+.btn,
+.btn:hover {
   text-decoration: none;
   /* [9] */ }
+
 .btn:active {
   outline: none; }
 
-/*------------------------------------*\
-    $SIZES
+/*------------------------------------*    $SIZES
 \*------------------------------------*/
 /**
  * Button size modifiers.
@@ -1884,8 +1859,7 @@ label,
   /* [1] */
   text-align: center; }
 
-/*------------------------------------*\
-    $FONT-SIZES
+/*------------------------------------*    $FONT-SIZES
 \*------------------------------------*/
 /**
  * Button font-size modifiers.
@@ -1909,8 +1883,7 @@ label,
   padding-right: 0.5em;
   padding-left: 0.5em; }
 
-/*------------------------------------*\
-    $FUNCTIONS
+/*------------------------------------*    $FUNCTIONS
 \*------------------------------------*/
 /**
  * Button function modifiers.
@@ -1943,8 +1916,7 @@ label,
   cursor: text;
   /* [1] */ }
 
-/*------------------------------------*\
-    $STYLES
+/*------------------------------------*    $STYLES
 \*------------------------------------*/
 /**
  * Button style modifiers.
@@ -1958,8 +1930,7 @@ label,
 .btn--hard {
   border-radius: 0; }
 
-/*------------------------------------*\
-    $LOZENGES
+/*------------------------------------*    $LOZENGES
 \*------------------------------------*/
 /**
  * Create pill- and lozenge-like runs of text, e.g.:
@@ -1976,10 +1947,10 @@ label,
 .pill, .loz {
   display: inline-block;
   /**
-   * These numbers set in ems mean that, at its narrowest, a lozenge will be
-   * the same width as the `line-height` set on the `html` element.
-   * This allows us to use the `.loz` in almost any `font-size` we wish.
-   */
+     * These numbers set in ems mean that, at its narrowest, a lozenge will be
+     * the same width as the `line-height` set on the `html` element.
+     * This allows us to use the `.loz` in almost any `font-size` we wish.
+     */
   min-width: 1.0em;
   padding-right: 0.25em;
   padding-left: 0.25em;
@@ -1989,10 +1960,10 @@ label,
   color: #fff;
   /* Override this color in your theme stylesheet */
   /**
-   * Normally we’d use border-radius:100%; but instead here we just use an
-   * overly large number; `border-radius:100%;` would create an oval on
-   * non-square elements whereas we just want to round the ends of an element.
-   */
+     * Normally we’d use border-radius:100%; but instead here we just use an
+     * overly large number; `border-radius:100%;` would create an oval on
+     * non-square elements whereas we just want to round the ends of an element.
+     */
   border-radius: 100px; }
 
 .loz {
@@ -2001,8 +1972,7 @@ label,
 /**
  * Style trumps; helper and brand classes
  */
-/*------------------------------------*\
-    $WIDTHS
+/*------------------------------------*    $WIDTHS
 \*------------------------------------*/
 /**
  * Sizes in human readable format. These are used in conjunction with other
@@ -2013,20 +1983,20 @@ label,
  * variations.
  */
 /**
-* Whole
-*/
+    * Whole
+    */
 .one-whole {
   width: 100%; }
 
 /**
-* Halves
-*/
+    * Halves
+    */
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
   width: 50%; }
 
 /**
-* Thirds
-*/
+    * Thirds
+    */
 .one-third, .two-sixths, .four-twelfths {
   width: 33.333%; }
 
@@ -2034,8 +2004,8 @@ label,
   width: 66.666%; }
 
 /**
-* Quarters
-*/
+    * Quarters
+    */
 .one-quarter, .two-eighths, .three-twelfths {
   width: 25%; }
 
@@ -2043,8 +2013,8 @@ label,
   width: 75%; }
 
 /**
-* Fifths
-*/
+    * Fifths
+    */
 .one-fifth, .two-tenths {
   width: 20%; }
 
@@ -2058,8 +2028,8 @@ label,
   width: 80%; }
 
 /**
-* Sixths
-*/
+    * Sixths
+    */
 .one-sixth, .two-twelfths {
   width: 16.666%; }
 
@@ -2067,8 +2037,8 @@ label,
   width: 83.333%; }
 
 /**
-* Eighths
-*/
+    * Eighths
+    */
 .one-eighth {
   width: 12.5%; }
 
@@ -2082,8 +2052,8 @@ label,
   width: 87.5%; }
 
 /**
-* Tenths
-*/
+    * Tenths
+    */
 .one-tenth {
   width: 10%; }
 
@@ -2097,8 +2067,8 @@ label,
   width: 90%; }
 
 /**
-* Twelfths
-*/
+    * Twelfths
+    */
 .one-twelfth {
   width: 8.333%; }
 
@@ -2130,526 +2100,415 @@ label,
  */
 @media only screen and (max-width: 480px) {
   /**
-  * Whole
-  */
+    * Whole
+    */
   .xs-one-whole {
     width: 100%; }
-
   /**
-  * Halves
-  */
+    * Halves
+    */
   .xs-one-half, .xs-two-quarters, .xs-three-sixths, .xs-four-eighths, .xs-five-tenths, .xs-six-twelfths {
     width: 50%; }
-
   /**
-  * Thirds
-  */
+    * Thirds
+    */
   .xs-one-third, .xs-two-sixths, .xs-four-twelfths {
     width: 33.333%; }
-
   .xs-two-thirds, .xs-four-sixths, .xs-eight-twelfths {
     width: 66.666%; }
-
   /**
-  * Quarters
-  */
+    * Quarters
+    */
   .xs-one-quarter, .xs-two-eighths, .xs-three-twelfths {
     width: 25%; }
-
   .xs-three-quarters, .xs-six-eighths, .xs-nine-twelfths {
     width: 75%; }
-
   /**
-  * Fifths
-  */
+    * Fifths
+    */
   .xs-one-fifth, .xs-two-tenths {
     width: 20%; }
-
   .xs-two-fifths, .xs-four-tenths {
     width: 40%; }
-
   .xs-three-fifths, .xs-six-tenths {
     width: 60%; }
-
   .xs-four-fifths, .xs-eight-tenths {
     width: 80%; }
-
   /**
-  * Sixths
-  */
+    * Sixths
+    */
   .xs-one-sixth, .xs-two-twelfths {
     width: 16.666%; }
-
   .xs-five-sixths, .xs-ten-twelfths {
     width: 83.333%; }
-
   /**
-  * Eighths
-  */
+    * Eighths
+    */
   .xs-one-eighth {
     width: 12.5%; }
-
   .xs-three-eighths {
     width: 37.5%; }
-
   .xs-five-eighths {
     width: 62.5%; }
-
   .xs-seven-eighths {
     width: 87.5%; }
-
   /**
-  * Tenths
-  */
+    * Tenths
+    */
   .xs-one-tenth {
     width: 10%; }
-
   .xs-three-tenths {
     width: 30%; }
-
   .xs-seven-tenths {
     width: 70%; }
-
   .xs-nine-tenths {
     width: 90%; }
-
   /**
-  * Twelfths
-  */
+    * Twelfths
+    */
   .xs-one-twelfth {
     width: 8.333%; }
-
   .xs-five-twelfths {
     width: 41.666%; }
-
   .xs-seven-twelfths {
     width: 58.333%; }
-
   .xs-eleven-twelfths {
     width: 91.666%; } }
+
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   /**
-  * Whole
-  */
+    * Whole
+    */
   .s-one-whole {
     width: 100%; }
-
   /**
-  * Halves
-  */
+    * Halves
+    */
   .s-one-half, .s-two-quarters, .s-three-sixths, .s-four-eighths, .s-five-tenths, .s-six-twelfths {
     width: 50%; }
-
   /**
-  * Thirds
-  */
+    * Thirds
+    */
   .s-one-third, .s-two-sixths, .s-four-twelfths {
     width: 33.333%; }
-
   .s-two-thirds, .s-four-sixths, .s-eight-twelfths {
     width: 66.666%; }
-
   /**
-  * Quarters
-  */
+    * Quarters
+    */
   .s-one-quarter, .s-two-eighths, .s-three-twelfths {
     width: 25%; }
-
   .s-three-quarters, .s-six-eighths, .s-nine-twelfths {
     width: 75%; }
-
   /**
-  * Fifths
-  */
+    * Fifths
+    */
   .s-one-fifth, .s-two-tenths {
     width: 20%; }
-
   .s-two-fifths, .s-four-tenths {
     width: 40%; }
-
   .s-three-fifths, .s-six-tenths {
     width: 60%; }
-
   .s-four-fifths, .s-eight-tenths {
     width: 80%; }
-
   /**
-  * Sixths
-  */
+    * Sixths
+    */
   .s-one-sixth, .s-two-twelfths {
     width: 16.666%; }
-
   .s-five-sixths, .s-ten-twelfths {
     width: 83.333%; }
-
   /**
-  * Eighths
-  */
+    * Eighths
+    */
   .s-one-eighth {
     width: 12.5%; }
-
   .s-three-eighths {
     width: 37.5%; }
-
   .s-five-eighths {
     width: 62.5%; }
-
   .s-seven-eighths {
     width: 87.5%; }
-
   /**
-  * Tenths
-  */
+    * Tenths
+    */
   .s-one-tenth {
     width: 10%; }
-
   .s-three-tenths {
     width: 30%; }
-
   .s-seven-tenths {
     width: 70%; }
-
   .s-nine-tenths {
     width: 90%; }
-
   /**
-  * Twelfths
-  */
+    * Twelfths
+    */
   .s-one-twelfth {
     width: 8.333%; }
-
   .s-five-twelfths {
     width: 41.666%; }
-
   .s-seven-twelfths {
     width: 58.333%; }
-
   .s-eleven-twelfths {
     width: 91.666%; } }
+
 @media only screen and (min-width: 481px) {
   /**
-  * Whole
-  */
+    * Whole
+    */
   .m-one-whole {
     width: 100%; }
-
   /**
-  * Halves
-  */
+    * Halves
+    */
   .m-one-half, .m-two-quarters, .m-three-sixths, .m-four-eighths, .m-five-tenths, .m-six-twelfths {
     width: 50%; }
-
   /**
-  * Thirds
-  */
+    * Thirds
+    */
   .m-one-third, .m-two-sixths, .m-four-twelfths {
     width: 33.333%; }
-
   .m-two-thirds, .m-four-sixths, .m-eight-twelfths {
     width: 66.666%; }
-
   /**
-  * Quarters
-  */
+    * Quarters
+    */
   .m-one-quarter, .m-two-eighths, .m-three-twelfths {
     width: 25%; }
-
   .m-three-quarters, .m-six-eighths, .m-nine-twelfths {
     width: 75%; }
-
   /**
-  * Fifths
-  */
+    * Fifths
+    */
   .m-one-fifth, .m-two-tenths {
     width: 20%; }
-
   .m-two-fifths, .m-four-tenths {
     width: 40%; }
-
   .m-three-fifths, .m-six-tenths {
     width: 60%; }
-
   .m-four-fifths, .m-eight-tenths {
     width: 80%; }
-
   /**
-  * Sixths
-  */
+    * Sixths
+    */
   .m-one-sixth, .m-two-twelfths {
     width: 16.666%; }
-
   .m-five-sixths, .m-ten-twelfths {
     width: 83.333%; }
-
   /**
-  * Eighths
-  */
+    * Eighths
+    */
   .m-one-eighth {
     width: 12.5%; }
-
   .m-three-eighths {
     width: 37.5%; }
-
   .m-five-eighths {
     width: 62.5%; }
-
   .m-seven-eighths {
     width: 87.5%; }
-
   /**
-  * Tenths
-  */
+    * Tenths
+    */
   .m-one-tenth {
     width: 10%; }
-
   .m-three-tenths {
     width: 30%; }
-
   .m-seven-tenths {
     width: 70%; }
-
   .m-nine-tenths {
     width: 90%; }
-
   /**
-  * Twelfths
-  */
+    * Twelfths
+    */
   .m-one-twelfth {
     width: 8.333%; }
-
   .m-five-twelfths {
     width: 41.666%; }
-
   .m-seven-twelfths {
     width: 58.333%; }
-
   .m-eleven-twelfths {
     width: 91.666%; } }
+
 @media only screen and (max-width: 1023px) {
   /**
-  * Whole
-  */
+    * Whole
+    */
   .l-one-whole {
     width: 100%; }
-
   /**
-  * Halves
-  */
+    * Halves
+    */
   .l-one-half, .l-two-quarters, .l-three-sixths, .l-four-eighths, .l-five-tenths, .l-six-twelfths {
     width: 50%; }
-
   /**
-  * Thirds
-  */
+    * Thirds
+    */
   .l-one-third, .l-two-sixths, .l-four-twelfths {
     width: 33.333%; }
-
   .l-two-thirds, .l-four-sixths, .l-eight-twelfths {
     width: 66.666%; }
-
   /**
-  * Quarters
-  */
+    * Quarters
+    */
   .l-one-quarter, .l-two-eighths, .l-three-twelfths {
     width: 25%; }
-
   .l-three-quarters, .l-six-eighths, .l-nine-twelfths {
     width: 75%; }
-
   /**
-  * Fifths
-  */
+    * Fifths
+    */
   .l-one-fifth, .l-two-tenths {
     width: 20%; }
-
   .l-two-fifths, .l-four-tenths {
     width: 40%; }
-
   .l-three-fifths, .l-six-tenths {
     width: 60%; }
-
   .l-four-fifths, .l-eight-tenths {
     width: 80%; }
-
   /**
-  * Sixths
-  */
+    * Sixths
+    */
   .l-one-sixth, .l-two-twelfths {
     width: 16.666%; }
-
   .l-five-sixths, .l-ten-twelfths {
     width: 83.333%; }
-
   /**
-  * Eighths
-  */
+    * Eighths
+    */
   .l-one-eighth {
     width: 12.5%; }
-
   .l-three-eighths {
     width: 37.5%; }
-
   .l-five-eighths {
     width: 62.5%; }
-
   .l-seven-eighths {
     width: 87.5%; }
-
   /**
-  * Tenths
-  */
+    * Tenths
+    */
   .l-one-tenth {
     width: 10%; }
-
   .l-three-tenths {
     width: 30%; }
-
   .l-seven-tenths {
     width: 70%; }
-
   .l-nine-tenths {
     width: 90%; }
-
   /**
-  * Twelfths
-  */
+    * Twelfths
+    */
   .l-one-twelfth {
     width: 8.333%; }
-
   .l-five-twelfths {
     width: 41.666%; }
-
   .l-seven-twelfths {
     width: 58.333%; }
-
   .l-eleven-twelfths {
     width: 91.666%; } }
+
 @media only screen and (min-width: 1024px) {
   /**
-  * Whole
-  */
+    * Whole
+    */
   .xl-one-whole {
     width: 100%; }
-
   /**
-  * Halves
-  */
+    * Halves
+    */
   .xl-one-half, .xl-two-quarters, .xl-three-sixths, .xl-four-eighths, .xl-five-tenths, .xl-six-twelfths {
     width: 50%; }
-
   /**
-  * Thirds
-  */
+    * Thirds
+    */
   .xl-one-third, .xl-two-sixths, .xl-four-twelfths {
     width: 33.333%; }
-
   .xl-two-thirds, .xl-four-sixths, .xl-eight-twelfths {
     width: 66.666%; }
-
   /**
-  * Quarters
-  */
+    * Quarters
+    */
   .xl-one-quarter, .xl-two-eighths, .xl-three-twelfths {
     width: 25%; }
-
   .xl-three-quarters, .xl-six-eighths, .xl-nine-twelfths {
     width: 75%; }
-
   /**
-  * Fifths
-  */
+    * Fifths
+    */
   .xl-one-fifth, .xl-two-tenths {
     width: 20%; }
-
   .xl-two-fifths, .xl-four-tenths {
     width: 40%; }
-
   .xl-three-fifths, .xl-six-tenths {
     width: 60%; }
-
   .xl-four-fifths, .xl-eight-tenths {
     width: 80%; }
-
   /**
-  * Sixths
-  */
+    * Sixths
+    */
   .xl-one-sixth, .xl-two-twelfths {
     width: 16.666%; }
-
   .xl-five-sixths, .xl-ten-twelfths {
     width: 83.333%; }
-
   /**
-  * Eighths
-  */
+    * Eighths
+    */
   .xl-one-eighth {
     width: 12.5%; }
-
   .xl-three-eighths {
     width: 37.5%; }
-
   .xl-five-eighths {
     width: 62.5%; }
-
   .xl-seven-eighths {
     width: 87.5%; }
-
   /**
-  * Tenths
-  */
+    * Tenths
+    */
   .xl-one-tenth {
     width: 10%; }
-
   .xl-three-tenths {
     width: 30%; }
-
   .xl-seven-tenths {
     width: 70%; }
-
   .xl-nine-tenths {
     width: 90%; }
-
   /**
-  * Twelfths
-  */
+    * Twelfths
+    */
   .xl-one-twelfth {
     width: 8.333%; }
-
   .xl-five-twelfths {
     width: 41.666%; }
-
   .xl-seven-twelfths {
     width: 58.333%; }
-
   .xl-eleven-twelfths {
     width: 91.666%; } }
+
 /**
  * If you have set the additional `$responsive-extra` variable to ‘true’ in
  * `_vars.scss` then you now have access to the following class available to
  * accomodate much larger screen resolutions.
  */
 /* endif */
-/*------------------------------------*\
-    $PUSH
+/*------------------------------------*    $PUSH
 \*------------------------------------*/
 /**
  * Push classes, to move grid items over to the right by certain amounts.
  */
 /**
- * Whole
- */
+     * Whole
+     */
 .push--one-whole {
   left: 100%; }
 
 /**
- * Halves
- */
+     * Halves
+     */
 .push--one-half, .push--two-quarters, .push--three-sixths, .push--four-eighths, .push--five-tenths, .push--six-twelfths {
   left: 50%; }
 
 /**
- * Thirds
- */
+     * Thirds
+     */
 .push--one-third, .push--two-sixths, .push--four-twelfths {
   left: 33.333%; }
 
@@ -2657,8 +2516,8 @@ label,
   left: 66.666%; }
 
 /**
- * Quarters
- */
+     * Quarters
+     */
 .push--one-quarter, .push--two-eighths, .push--three-twelfths {
   left: 25%; }
 
@@ -2666,8 +2525,8 @@ label,
   left: 75%; }
 
 /**
- * Fifths
- */
+     * Fifths
+     */
 .push--one-fifth, .push--two-tenths {
   left: 20%; }
 
@@ -2681,8 +2540,8 @@ label,
   left: 80%; }
 
 /**
- * Sixths
- */
+     * Sixths
+     */
 .push--one-sixth, .push--two-twelfths {
   left: 16.666%; }
 
@@ -2690,8 +2549,8 @@ label,
   left: 83.333%; }
 
 /**
- * Eighths
- */
+     * Eighths
+     */
 .push--one-eighth {
   left: 12.5%; }
 
@@ -2705,8 +2564,8 @@ label,
   left: 87.5%; }
 
 /**
- * Tenths
- */
+     * Tenths
+     */
 .push--one-tenth {
   left: 10%; }
 
@@ -2720,8 +2579,8 @@ label,
   left: 90%; }
 
 /**
- * Twelfths
- */
+     * Twelfths
+     */
 .push--one-twelfth {
   left: 8.333%; }
 
@@ -2742,105 +2601,82 @@ label,
 
 @media only screen and (max-width: 480px) {
   /**
-   * Whole
-   */
+     * Whole
+     */
   .push--xs-one-whole {
     left: 100%; }
-
   /**
-   * Halves
-   */
+     * Halves
+     */
   .push--xs-one-half, .push--xs-two-quarters, .push--xs-three-sixths, .push--xs-four-eighths, .push--xs-five-tenths, .push--xs-six-twelfths {
     left: 50%; }
-
   /**
-   * Thirds
-   */
+     * Thirds
+     */
   .push--xs-one-third, .push--xs-two-sixths, .push--xs-four-twelfths {
     left: 33.333%; }
-
   .push--xs-two-thirds, .push--xs-four-sixths, .push--xs-eight-twelfths {
     left: 66.666%; }
-
   /**
-   * Quarters
-   */
+     * Quarters
+     */
   .push--xs-one-quarter, .push--xs-two-eighths, .push--xs-three-twelfths {
     left: 25%; }
-
   .push--xs-three-quarters, .push--xs-six-eighths, .push--xs-nine-twelfths {
     left: 75%; }
-
   /**
-   * Fifths
-   */
+     * Fifths
+     */
   .push--xs-one-fifth, .push--xs-two-tenths {
     left: 20%; }
-
   .push--xs-two-fifths, .push--xs-four-tenths {
     left: 40%; }
-
   .push--xs-three-fifths, .push--xs-six-tenths {
     left: 60%; }
-
   .push--xs-four-fifths, .push--xs-eight-tenths {
     left: 80%; }
-
   /**
-   * Sixths
-   */
+     * Sixths
+     */
   .push--xs-one-sixth, .push--xs-two-twelfths {
     left: 16.666%; }
-
   .push--xs-five-sixths, .push--xs-ten-twelfths {
     left: 83.333%; }
-
   /**
-   * Eighths
-   */
+     * Eighths
+     */
   .push--xs-one-eighth {
     left: 12.5%; }
-
   .push--xs-three-eighths {
     left: 37.5%; }
-
   .push--xs-five-eighths {
     left: 62.5%; }
-
   .push--xs-seven-eighths {
     left: 87.5%; }
-
   /**
-   * Tenths
-   */
+     * Tenths
+     */
   .push--xs-one-tenth {
     left: 10%; }
-
   .push--xs-three-tenths {
     left: 30%; }
-
   .push--xs-seven-tenths {
     left: 70%; }
-
   .push--xs-nine-tenths {
     left: 90%; }
-
   /**
-   * Twelfths
-   */
+     * Twelfths
+     */
   .push--xs-one-twelfth {
     left: 8.333%; }
-
   .push--xs-five-twelfths {
     left: 41.666%; }
-
   .push--xs-seven-twelfths {
     left: 58.333%; }
-
   .push--xs-eleven-twelfths {
     left: 91.666%; } }
-/*------------------------------------*\
-    $PULL
+
+/*------------------------------------*    $PULL
 \*------------------------------------*/
 /**
  * Pull classes, to move grid items over to the right by certain amounts.
@@ -2852,20 +2688,20 @@ label,
   position: relative; }
 
 /**
- * Whole
- */
+     * Whole
+     */
 .pull--one-whole {
   right: 100%; }
 
 /**
- * Halves
- */
+     * Halves
+     */
 .pull--one-half, .pull--two-quarters, .pull--three-sixths, .pull--four-eighths, .pull--five-tenths, .pull--six-twelfths {
   right: 50%; }
 
 /**
- * Thirds
- */
+     * Thirds
+     */
 .pull--one-third, .pull--two-sixths, .pull--four-twelfths {
   right: 33.333%; }
 
@@ -2873,8 +2709,8 @@ label,
   right: 66.666%; }
 
 /**
- * Quarters
- */
+     * Quarters
+     */
 .pull--one-quarter, .pull--two-eighths, .pull--three-twelfths {
   right: 25%; }
 
@@ -2882,8 +2718,8 @@ label,
   right: 75%; }
 
 /**
- * Fifths
- */
+     * Fifths
+     */
 .pull--one-fifth, .pull--two-tenths {
   right: 20%; }
 
@@ -2897,8 +2733,8 @@ label,
   right: 80%; }
 
 /**
- * Sixths
- */
+     * Sixths
+     */
 .pull--one-sixth, .pull--two-twelfths {
   right: 16.666%; }
 
@@ -2906,8 +2742,8 @@ label,
   right: 83.333%; }
 
 /**
- * Eighths
- */
+     * Eighths
+     */
 .pull--one-eighth {
   right: 12.5%; }
 
@@ -2921,8 +2757,8 @@ label,
   right: 87.5%; }
 
 /**
- * Tenths
- */
+     * Tenths
+     */
 .pull--one-tenth {
   right: 10%; }
 
@@ -2936,8 +2772,8 @@ label,
   right: 90%; }
 
 /**
- * Twelfths
- */
+     * Twelfths
+     */
 .pull--one-twelfth {
   right: 8.333%; }
 
@@ -2952,123 +2788,99 @@ label,
 
 @media only screen and (max-width: 480px) {
   /**
-   * Whole
-   */
+     * Whole
+     */
   .pull--xs-one-whole {
     right: 100%; }
-
   /**
-   * Halves
-   */
+     * Halves
+     */
   .pull--xs-one-half, .pull--xs-two-quarters, .pull--xs-three-sixths, .pull--xs-four-eighths, .pull--xs-five-tenths, .pull--xs-six-twelfths {
     right: 50%; }
-
   /**
-   * Thirds
-   */
+     * Thirds
+     */
   .pull--xs-one-third, .pull--xs-two-sixths, .pull--xs-four-twelfths {
     right: 33.333%; }
-
   .pull--xs-two-thirds, .pull--xs-four-sixths, .pull--xs-eight-twelfths {
     right: 66.666%; }
-
   /**
-   * Quarters
-   */
+     * Quarters
+     */
   .pull--xs-one-quarter, .pull--xs-two-eighths, .pull--xs-three-twelfths {
     right: 25%; }
-
   .pull--xs-three-quarters, .pull--xs-six-eighths, .pull--xs-nine-twelfths {
     right: 75%; }
-
   /**
-   * Fifths
-   */
+     * Fifths
+     */
   .pull--xs-one-fifth, .pull--xs-two-tenths {
     right: 20%; }
-
   .pull--xs-two-fifths, .pull--xs-four-tenths {
     right: 40%; }
-
   .pull--xs-three-fifths, .pull--xs-six-tenths {
     right: 60%; }
-
   .pull--xs-four-fifths, .pull--xs-eight-tenths {
     right: 80%; }
-
   /**
-   * Sixths
-   */
+     * Sixths
+     */
   .pull--xs-one-sixth, .pull--xs-two-twelfths {
     right: 16.666%; }
-
   .pull--xs-five-sixths, .pull--xs-ten-twelfths {
     right: 83.333%; }
-
   /**
-   * Eighths
-   */
+     * Eighths
+     */
   .pull--xs-one-eighth {
     right: 12.5%; }
-
   .pull--xs-three-eighths {
     right: 37.5%; }
-
   .pull--xs-five-eighths {
     right: 62.5%; }
-
   .pull--xs-seven-eighths {
     right: 87.5%; }
-
   /**
-   * Tenths
-   */
+     * Tenths
+     */
   .pull--xs-one-tenth {
     right: 10%; }
-
   .pull--xs-three-tenths {
     right: 30%; }
-
   .pull--xs-seven-tenths {
     right: 70%; }
-
   .pull--xs-nine-tenths {
     right: 90%; }
-
   /**
-   * Twelfths
-   */
+     * Twelfths
+     */
   .pull--xs-one-twelfth {
     right: 8.333%; }
-
   .pull--xs-five-twelfths {
     right: 41.666%; }
-
   .pull--xs-seven-twelfths {
     right: 58.333%; }
-
   .pull--xs-eleven-twelfths {
     right: 91.666%; } }
-/*------------------------------------*\
-    $BRAND
+
+/*------------------------------------*    $BRAND
 \*------------------------------------*/
 /**
  * `.brand` is a quick and simple way to apply your brand face and/or color to
  * any element using a handy helper class.
  */
 .brand {
-  font-family: Helvetica Neue, sans-serif!important;
+  font-family: "Helvetica Neue", sans-serif!important;
   color: #4a8ec2!important; }
 
 .brand-face {
-  font-family: Helvetica Neue, sans-serif!important; }
+  font-family: "Helvetica Neue", sans-serif!important; }
 
 .brand-color,
 .brand-colour {
   color: #4a8ec2!important; }
 
-/*------------------------------------*\
-    $HELPER
+/*------------------------------------*    $HELPER
 \*------------------------------------*/
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an
@@ -3333,6 +3145,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
+
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .accessibility--s,
   .visuallyhidden--s {
@@ -3344,6 +3157,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
+
 @media only screen and (min-width: 481px) {
   .accessibility--m,
   .visuallyhidden--m {
@@ -3355,6 +3169,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
+
 @media only screen and (max-width: 1023px) {
   .accessibility--l,
   .visuallyhidden--l {
@@ -3366,6 +3181,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
+
 @media only screen and (min-width: 1024px) {
   .accessibility--xl,
   .visuallyhidden--xl {
@@ -3377,6 +3193,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
+
 @media only screen and (min-width: 1200px) {
   .accessibility--xxl,
   .visuallyhidden--xxl {
@@ -3388,6 +3205,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
+
 /* endif */
 .visuallyhidden {
   overflow: hidden;

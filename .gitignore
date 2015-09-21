@@ -75,3 +75,5 @@ nbproject
 .tmp/
 node_modules
 bower_components
+build
+styles/css
