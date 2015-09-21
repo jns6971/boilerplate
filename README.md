@@ -2,10 +2,11 @@
 
 ## Setup
 - ```cd``` to new project directory
-- ```sudo npm install```
-- run ```grunt```
+- ```npm install```
+- ```bower install```
+- run ```gulp```
 
 
 ## Contents
-- Grunt (sass & watch)
+- Gulp (sass, browserify & watch)
 - Inuint Framework
