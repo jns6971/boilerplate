@@ -2,12 +2,16 @@
 $base-spacing-unit: 40px;
 $base-spacing-unit-custom: 10px;
 $base-font-family: 'Lato_regular', sans-serif;
+$base-font-size: 20px;
+$base-animate-time: .25s;
+$base-animate-time-fast: .1s;
 
 
 //colors
 
-$rs-primary-color: #69bec3;
-$rs-primary-color-dark: #447c7f;
+$rs-primary-color: #A291FF;
+$rs-primary-color-dark: #51487F;
+$rs-primary-color-light: #E3DDFF;
 $rs-secondary-color: blue;
 $rs-text-dark: #444;
 $rs-text-med: #888;
@@ -26,3 +30,8 @@ $rs-font: 'Lato_regular', sans-serif;
 $rs-font-bold: 'Lato_bold', sans-serif;
 $rs-font-italic: 'Lato_italic', sans-serif;
 
+$nav-font: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+//font size
+$h1-font-size: 3em;
+$h2-font-size: 2em;

@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var browserify = require('gulp-browserify');
 var sourcemaps = require('gulp-sourcemaps');
 
-var sassSources = 'styles/**/*.scss';
+var sassSources = 'styles/sass/**/*.scss';
 var jsSources = 'scripts/**/*.js';
 
 gulp.task('styles', function() {

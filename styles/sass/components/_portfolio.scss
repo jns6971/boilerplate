@@ -2,34 +2,176 @@ body{
 	background-color: #FFF;
 }
 
-.page-wrapper{
-	max-width: 940px;
-	margin: 0 auto;
+$nav-animate-time: .25s;
+.portfolioMenu{
+	
+	font-family: $nav-font;
+	color: #FFF;
+	text-transform: uppercase;
+    font-weight: 800;
+    height: 65px;
+
+    .menu{
+    	text-transform: uppercase;
+    }
+
+    h2{
+    	font-family: $nav-font;
+		color: #FFF;
+		text-transform: uppercase;
+    	font-weight: 800;
+    	margin: 0;
+    	line-height: 45px;
+    }
+
+    .top-bar{
+    	height: auto;
+    	padding: $base-spacing-unit $base-spacing-unit-custom;
+    	@include transition(padding, $nav-animate-time, ease-in-out);
+    }
+
+    &.fixed{
+    	.top-bar{
+    		padding: $base-spacing-unit-custom $base-spacing-unit-custom;
+    	}
+    }
+
+    @media #{$small-only} {
+    	.top-bar{
+    		text-align: center;
+    		padding: $base-spacing-unit-custom 0;
+    	}
+    	&.fixed{
+	    	.top-bar{
+	    		padding: $base-spacing-unit-custom 0;
+	    	}
+	    }
+    	h2{
+    		font-size: 1.25em;
+
+    	}
+    }
+
 }
 
-.rs-wrapper{
+.portfolioHero{
+	height: 100%;
+	background: #FFF;
+	position: relative;
+
+	.heroBackground{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: url("/img/hero-space.jpg");
+		opacity: 0.5;
+		background-size: cover;
+		background-position: center;
+
+		$bg-blur: 3px;
+		-webkit-filter: blur($bg-blur);
+		-moz-filter: blur($bg-blur);
+		-o-filter: blur($bg-blur);
+		-ms-filter: blur($bg-blur);
+		filter: blur($bg-blur);
+	}
+
+	.heroContainer{
+		position:absolute;
+  		-webkit-transform: translate(0,-50%);
+	      -ms-transform: translate(0,-50%);
+	          transform: translate(0,-50%);
+	    left:0;
+	    top:50%;
+
+  		.title{
+  			font-weight: 800;
+			color: transparent;
+			font-size: 180px;
+			background: url("/img/hero-space.jpg") repeat;
+			background-position: 50% 50%;
+			background-size: 200% auto;
+			-webkit-background-clip: text;
+			position:relative;
+			text-align:center;
+			line-height: 160px;
+			letter-spacing: 6px;
+			font-family: "Blackout", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  		}
+
+  		.position{
+  			font-size: 90px;
+  			letter-spacing: 2px;
+  			white-space: nowrap;
+  			font-weight: normal;
+
+  		}
+
+  		@media #{$small-only} {
+  			.title{
+  				font-size: 80px;
+	  			letter-spacing: 2px;
+	  			line-height: 80px;
+  			}
+			.position{
+				font-size: 42px;
+	  			letter-spacing: -1px;
+			}
+		}
+	}
+	@media #{$small-only} {
+		margin-bottom: -65px;
+
+		.heroBackground{
+  			.title{
+  				font-size: 80px;
+	  			letter-spacing: 2px;
+	  			line-height: 80px;
+  			}
+			.position{
+				font-size: 42px;
+	  			letter-spacing: -1px;
+			}
+		}
+	}
 	
 }
 
-.rs-section{
-	
+.contact{
+	ul{
+		line-height: normal;
+		list-style-type: none;
+		margin: 0;
+
+		li{
+			padding: 10px 0;
+			font-size: 20px;
+			line-height: 1.5em;
+
+			a, address{
+				text-decoration: none;
+				font-style: none;
+				font-weight: 800;
+				
+				display: inline;
+			}
+		}
+	}
+
+	.contact-title{
+		text-transform: uppercase;
+	}
 }
 
-.grid{
-	
+.f-topbar-fixed{
+	.bio{
+		padding-top: 165px;
+	}
 }
-
-.rs-header{
-	
-}
-
-.rs-main-content{
-
-	
-}
-
-.rs-footer{
-
+.bio{
+	padding-top: 105px;
 }
 
 

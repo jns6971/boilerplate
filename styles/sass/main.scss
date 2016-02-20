@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-@import "reset",
+@import "bower_components/foundation/scss/normalize",
 		"fonts",
-		"inuit/inuit",
+		"bower_components/foundation/scss/foundation",
 		"vars",
-		"mixins",
-		"styleguide";
+		"styleguide",
+		"mixins";
+
 
 //pages
 @import "components/portfolio";

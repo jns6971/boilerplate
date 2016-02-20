@@ -9,42 +9,40 @@ body{
 }
 
 h1, .h1{
-	font-size: $h1-size;
+	font-size: $h1-font-size;
 	line-height: 1em;
-	font-family: $rs-font;
 	text-transform: uppercase;
 	margin: 0 0 $base-spacing-unit-custom;
 }
 
 h2, .h2{
-	font-size: $h2-size;
+	font-size: $h2-font-size;
 	line-height: 1em;
-	color: $rs-primary-color;
 	text-transform: uppercase;
 	margin: 0 0 $base-spacing-unit-custom;
 }
 
 h3, .h3{
-	font-size: $h3-size;
+	font-size: $h3-font-size;
 	line-height: 1em;
 	color: $rs-primary-color;
 	margin: 0 0 $base-spacing-unit-custom;
 }
 
 h4, .h4{
-	font-size: $h4-size;
+	font-size: $h4-font-size;
 	line-height: 1em;
 	font-family: $rs-font-bold;
 }
 
 h5, .h5{
-	font-size: $h5-size;
+	font-size: $h5-font-size;
 	line-height: 1em;
 	color: $rs-text-med;
 }
 
 h6, .h6{
-	font-size: $h6-size;
+	font-size: $h6-font-size;
 	line-height: 1em;
 }
 
@@ -86,6 +84,67 @@ p, .p{
 	padding-bottom: $base-spacing-unit-custom;
 }
 
+button, .button{
+	font-weight: 800;
+}
+
+nav{
+
+	.top-bar{
+		//background: $rs-primary-color-dark;
+	}
+	.top-bar-section ul li{
+		//background-color: $rs-primary-color-dark;
+
+		a{
+			//background: $rs-primary-color-dark;
+			font-weight: 800;
+			text-transform: uppercase;
+		}
+	}
+}
+
+section{
+	padding: ($base-spacing-unit * 2) 0;
+
+	h2{
+		padding-bottom: 10px;
+	}
+
+	&:nth-child(odd){
+		background-color: #FFF;
+
+		.button{
+			background-color: #FFF;
+			border: solid 2px $rs-primary-color;
+			color: $rs-text-dark;
+			@include transition(background-color, $base-animate-time, ease-in-out);
+			&:hover{
+				background-color: $rs-primary-color;
+			}
+		}
+
+		
+	}
+	&:nth-child(even){
+		background-color: $rs-primary-color;
+		color: #FFF;
+
+		h2, p, a{
+			color: #FFF;
+		}
+
+		.button{
+			background-color: #FFF;
+			border: solid 2px #FFF;
+			color: $rs-text-dark;
+			@include transition(background-color, $base-animate-time, ease-in-out);
+			&:hover{
+				background-color: $rs-primary-color;
+			}
+		}
+	}
+}
 
 .no-js{
 	
