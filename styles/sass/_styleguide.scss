@@ -146,6 +146,47 @@ section{
 	}
 }
 
+
+.modal{
+	border-radius: 3px;
+	display: none;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1005;
+	left: 0;
+	background-color: #FFFFFF;
+	padding: 1.66667rem;
+	border: solid 1px #666666;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+	>:last-child {
+	    margin-bottom: 0;
+	}
+
+	.close-reveal-modal{
+		color: #AAAAAA;
+		cursor: pointer;
+		font-size: 2.22222rem;
+		font-weight: bold;
+		line-height: 1;
+		position: absolute;
+		top: 0.55556rem;
+		right: 1.22222rem;
+		text-decoration: none;
+	}
+
+	@media #{$small-up}{
+		left: 0;
+		margin: 0 auto;
+		max-width: 55.55556rem;
+		right: 0;
+		width: 80%;
+		top: 5.55556rem;
+	}
+}
+
 .no-js{
 	
 }

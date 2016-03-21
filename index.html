@@ -94,15 +94,24 @@
     </section>
 
     <!-- Portfolio Section -->
-    <!-- <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="columns small-12">
                 	<h2 class="text-center">Protfolio</h2>
+                	<ul class="portfolio-items">
+                		<li class="portfolio-item">
+                			<img class="portfolio-example" src="/img/portfolio/oliver-screenshot.jpg" alt="Pup Named Oliver Website" data-reveal-id="oliver-modal">
+                			<div id="oliver-modal" data-reveal class="modal" aria-labelledby="Pup Named Oliver Modal" aria-hidden="true" role="dialog">
+                				<h2>Oliver Modal</h2>
+                				<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                			</div>
+                		</li>
+                	</ul>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- Contact Section -->
@@ -136,6 +145,12 @@
 	<script src="scripts/lib/foundation.min.js"></script>
 	<script src="scripts/lib/detectmobilebrowser.js"></script>
 	<script src="scripts/main.js"></script>
+
+	<div id="oliver-modal" data-reveal class="modal" aria-labelledby="Pup Named Oliver Modal" aria-hidden="true" role="dialog">
+		<h2>Oliver Modal</h2>
+		<p>Here is my test modal</p>
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>
 
 </body>
 </html>

@@ -120,6 +120,12 @@ $nav-animate-time: .25s;
 	  			letter-spacing: -1px;
 			}
 		}
+
+		@media #{$large-up}{
+			.title{
+				padding: 0 80px;
+			}
+		}
 	}
 	@media #{$small-only} {
 		margin-bottom: -65px;
@@ -172,6 +178,10 @@ $nav-animate-time: .25s;
 }
 .bio{
 	padding-top: 105px;
+}
+
+.portfolio-example{
+	
 }
 
 
