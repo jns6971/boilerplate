@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-@import "bower_components/foundation/scss/normalize",
+@import "vars",
+		"bower_components/foundation/scss/normalize",
 		"fonts",
 		"bower_components/foundation/scss/foundation",
-		"vars",
+		"bower_components/font-awesome/scss/font-awesome",
 		"styleguide",
 		"mixins";
 

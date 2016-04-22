@@ -1,4 +1,4 @@
-//inuit defaults
+// //inuit defaults
 $base-spacing-unit: 40px;
 $base-spacing-unit-custom: 10px;
 $base-font-family: 'Lato_regular', sans-serif;
@@ -6,6 +6,10 @@ $base-font-size: 20px;
 $base-animate-time: .25s;
 $base-animate-time-fast: .1s;
 
+
+//font awesome defaults
+// $fa-font-path: '/bower-components/font-awesome/fonts';
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts" !default;
 
 //colors
 
@@ -33,5 +37,5 @@ $rs-font-italic: 'Lato_italic', sans-serif;
 $nav-font: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
 //font size
-$h1-font-size: 3em;
-$h2-font-size: 2em;
+// $h1-font-size: 3em;
+// $h2-font-size: 2em;

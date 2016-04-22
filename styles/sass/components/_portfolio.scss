@@ -27,7 +27,7 @@ $nav-animate-time: .25s;
     .top-bar{
     	height: auto;
     	padding: $base-spacing-unit $base-spacing-unit-custom;
-    	@include transition(padding, $nav-animate-time, ease-in-out);
+    	@include transition(padding $base-animate-time ease-in-out);
     }
 
     &.fixed{
@@ -57,7 +57,20 @@ $nav-animate-time: .25s;
 .portfolioHero{
 	height: 100%;
 	background: #FFF;
-	position: relative;
+
+	.heroBackgroundWrapper{
+		display: none;
+		position: relative;
+		height: 100%;
+	}
+
+	.heroBackgroundFallback{
+		background-image: url("/img/bg-fallback-mobile.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100%;
+	}
 
 	.heroBackground{
 		position: absolute;
@@ -85,6 +98,7 @@ $nav-animate-time: .25s;
 	          transform: translate(0,-50%);
 	    left:0;
 	    top:50%;
+	    width: 100%;
 
   		.title{
   			font-weight: 800;
@@ -123,7 +137,7 @@ $nav-animate-time: .25s;
 
 		@media #{$large-up}{
 			.title{
-				padding: 0 80px;
+				padding: 0 240px;
 			}
 		}
 	}
@@ -142,7 +156,25 @@ $nav-animate-time: .25s;
 			}
 		}
 	}
-	
+
+	@media #{$medium-up}{
+		.heroBackgroundFallback{
+			background-image: url("/img/bg-fallback.jpg");
+		}
+	}
+
+
+}
+
+.chrome, .opera, .safari{
+	.portfolioHero{
+		.heroBackgroundWrapper{
+			display: block;
+		}
+		.heroBackgroundFallback{
+			display: none;
+		}
+	}
 }
 
 .contact{
@@ -180,9 +212,82 @@ $nav-animate-time: .25s;
 	padding-top: 105px;
 }
 
-.portfolio-example{
-	
+
+
+//protfolio
+
+
+.portfolio-item-wrapper{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	@include box-shadow(0, 0, 20px, 0, rgba(48,48,48,0.5));
+
+	&:hover{
+		.portfolio-item-details{
+			bottom: 0;
+		}
+		.portfolio-example{
+			@include grayscale(0);
+		}
+	}
+
+	.portfolio-example{
+		@include grayscale(100%);
+		@include transition(all $base-animate-time ease-in-out);
+	}
 }
+
+.portfolio-item-details{
+	position: absolute;
+	bottom: -67px;
+	left: 0;
+	width: 100%;
+	height: 67px;
+	background-color: #fff;
+	opacity: .9;
+	padding: 20px 0;
+	@include transition(bottom $base-animate-time ease-in-out);
+	background-color: $rs-primary-color;
+	text-align: center;
+
+	h3{
+		margin: 0;
+		color: #fff;
+	}
+}
+
+.portfolio-items{
+	list-style-type: none;
+
+	.portfolio-item{
+		padding: 40px;
+	}
+}
+
+
+.portfolio-modal{
+
+	.fa-arrow-right{
+		font-size: 10px;
+		vertical-align: middle;
+	}
+
+	img{
+		@include box-shadow(0, 0, 20px, 0, rgba(48,48,48,0.5));
+	}
+
+	.portfolio-modal-details{
+		padding-top: ($base-spacing-unit/2);
+
+		ul{
+			color: $rs-text-dark;
+			line-height: 1.5;
+		}
+	}
+}
+
+
 
 
 .no-js{

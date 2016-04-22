@@ -1,5 +1,8 @@
+// activate foundation js
 $(document).foundation();
 
+
+// Hero background js
 $(document).ready(function(){
 	var percX, percY, tiltX, tiltY,
 		oldMax = 100,
@@ -10,7 +13,9 @@ $(document).ready(function(){
 		wh = $( window ).height(),
 		$document = $(document);
 		$hero = $('#portfolioHero'),
-		$title = $hero.find('.title');
+		heroHeight = $hero.outerHeight(),
+		$title = $hero.find('.title')
+		$heroBg = $hero.find('.heroBackground');
 
 
 	if(window.mobilecheck()){
@@ -36,15 +41,76 @@ $(document).ready(function(){
 		}
 	}else{
 		$document.mousemove(function(e){
-			if(e.pageY <= $hero.outerHeight()){
+			if(e.pageY <= heroHeight){
+				//calculate background position based on mouse position
 				percX = (e.pageX / ww) * 100;
 				percY = (e.pageY / wh) * 100;
 
-				percX = (((percX - oldMin) * (newMax - newMin)) / (oldMax - oldMin)) + newMin;
-				percY = (((percY - oldMin) * (newMax - newMin)) / (oldMax - oldMin)) + newMin;
+				percX = Math.round( ((((percX - oldMin) * (newMax - newMin)) / (oldMax - oldMin)) + newMin) * 100 )/100;
+				percY = Math.round( ((((percY - oldMin) * (newMax - newMin)) / (oldMax - oldMin)) + newMin) * 100 )/100;
+				$title.css({"background-position": percX + "% " + percY + "%"});
 
-				$title.css({"background-position": percX + "%" + percY + "%"});
 			}
 		});
 	}
+
+	// $document.scroll(function(){
+	// 	var scrollDif = Math.round(($document.scrollTop() / heroHeight) * 100) / 100;
+		
+	// 	if(scrollDif < 1){
+	// 		console.log($heroBg, 'grayscale('+scrollDif+')');
+	// 		$heroBg.css({"-webkit-filter": 'grayscale('+scrollDif+')'});
+	// 	}
+	// });
+
+
+
+
+
+	// $(document).on('open.fndtn.reveal', '[data-reveal]', function(e){ 
+	// 	console.log('open says a me: ', e);
+	// 	var videoEl = $(e.target).find('#video'),
+	// 		videoId;
+
+	// 		console.log(videoEl);
+
+	// 		debugger;
+
+	// 	if(videoEl.length > 0){
+	// 		videoId = videoEl.data('video-id');
+
+	// 		console.log('videoId: ',videoId);
+	// 	}
+	// });
+
+	$(".owl-carousel").owlCarousel({
+		'loop': true,
+		'margin': 10,
+		'nav': false,
+		responsive:{
+			0:{
+				'items':1
+			},
+			425:{
+				'items':2
+			},
+			768:{
+				'items':4
+			}
+		}
+	});
+
+
 });
+
+//add scroll jacker
+$(function(){
+	$('.scroll').click(function(){
+		$('html,body').animate({
+			'scrollTop': $('#target').offset().top
+		},'500');
+		return false;
+	});
+});
+
+

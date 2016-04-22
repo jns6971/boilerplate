@@ -62,7 +62,7 @@ li, .li{
 a, .a{
 	color: $rs-primary-color;
 	text-decoration: none;
-	@include transition(color, 0.2s, ease-in-out);
+	@include transition(color 0.2s ease-in-out);
 
 	&:hover{
 		color: $rs-text-dark;
@@ -118,7 +118,7 @@ section{
 			background-color: #FFF;
 			border: solid 2px $rs-primary-color;
 			color: $rs-text-dark;
-			@include transition(background-color, $base-animate-time, ease-in-out);
+			@include transition(background-color $base-animate-time ease-in-out);
 			&:hover{
 				background-color: $rs-primary-color;
 			}
@@ -138,19 +138,28 @@ section{
 			background-color: #FFF;
 			border: solid 2px #FFF;
 			color: $rs-text-dark;
-			@include transition(background-color, $base-animate-time, ease-in-out);
+			@include transition(background-color $base-animate-time ease-in-out, color $base-animate-time ease-in-out);
 			&:hover{
 				background-color: $rs-primary-color;
+				color: #fff;
+			}
+		}
+
+		.portfolio-item-details{
+			background-color: #fff;
+			h3{
+				color: $rs-text-dark;;
 			}
 		}
 	}
 }
 
 
+
 .modal{
 	border-radius: 3px;
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	visibility: hidden;
 	width: 100%;
@@ -175,6 +184,11 @@ section{
 		top: 0.55556rem;
 		right: 1.22222rem;
 		text-decoration: none;
+		@include transition(color $base-animate-time ease-in-out);
+
+		&:hover{
+			color: $rs-primary-color;
+		}
 	}
 
 	@media #{$small-up}{
@@ -184,6 +198,12 @@ section{
 		right: 0;
 		width: 80%;
 		top: 5.55556rem;
+	}
+
+	&.open{
+		top: $base-spacing-unit !important;
+		bottom: $base-spacing-unit !important;
+		overflow-y: auto;
 	}
 }
 

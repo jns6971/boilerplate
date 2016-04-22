@@ -20,21 +20,25 @@
 	<meta name="description" content="TODO:Populate">
 	<meta name="author" content="Jordan Simon">
 
-	<!-- <script src="scripts/lib/modernizr.js"></script> -->
+	<script src="scripts/lib/modernizr.js"></script>
+    <script src="scripts/lib/css_browser_selector.js"></script>
 
 </head>
 <body id="page-top" class="index">
 
     <!-- Header -->
     <header class="portfolioHero" id="portfolioHero">
-    	<div class="heroBackground"></div>
-    	<div class="heroContainer">
-			<h1 class="title">JORDAN <span class="position">WEB DEVELOPER</span></h1>
-		</div>
-		<!-- <div class="tests">
-			<h3>X: <span id="x"></span></h3>
-			<h3>Y: <span id="y"></span></h3>
+        <div class="heroBackgroundWrapper">
+        	<div class="heroBackground"></div>
+        	<div class="heroContainer">
+    			<h1 class="title">JORDAN <span class="position">WEB DEVELOPER</span></h1>
+    		</div>
+    		<!-- <div class="tests">
+    			<h3>X: <span id="x"></span></h3>
+    			<h3>Y: <span id="y"></span></h3>
 		</div> -->
+        </div>
+        <div class="heroBackgroundFallback"></div>
     </header>
 
     <!-- Navigation -->
@@ -52,6 +56,7 @@
 				    		<ul class="menu" role="tablist">
 				    			<li data-magellan-arrival="about" role="menuitem"><a href="#about">About</a></li>
 				    			<li data-magellan-arrival="skills" role="menuitem"><a href="#skills">Skills</a></li>
+				    			<li data-magellan-arrival="portfolio" role="menuitem"><a href="#portfolio">Portfolio</a></li>
 				    			<li data-magellan-arrival="contact" role="menuitem"><a href="#contact">Contact</a></li>
 				    		</ul>
 				    	</div>
@@ -98,15 +103,221 @@
         <div class="container">
             <div class="row">
                 <div class="columns small-12">
-                	<h2 class="text-center">Protfolio</h2>
-                	<ul class="portfolio-items">
+                	<h2 class="text-center">Portfolio</h2>
+                	<ul class="portfolio-items small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+
+                    <!-- Pup Named Oliver -->
                 		<li class="portfolio-item">
-                			<img class="portfolio-example" src="/img/portfolio/oliver-screenshot.jpg" alt="Pup Named Oliver Website" data-reveal-id="oliver-modal">
-                			<div id="oliver-modal" data-reveal class="modal" aria-labelledby="Pup Named Oliver Modal" aria-hidden="true" role="dialog">
-                				<h2>Oliver Modal</h2>
-                				<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                			<div class="portfolio-item-wrapper" data-reveal-id="oliver-modal">
+	                			<img class="portfolio-example" src="/img/projects/oliver-screenshot-sm.jpg" alt="Pup Named Oliver Website">
+	                			<div class="portfolio-item-details">
+                					<h3>PupNamedOliver</h3>
+                				</div>
                 			</div>
+
+                			<article id="oliver-modal" data-reveal class="modal portfolio-modal" aria-labelledby="Pup Named Oliver Modal" aria-hidden="true" role="dialog">
+                				<div class="row">
+	                				<div class="column small-12 medium-8 medium-push-4 large-9 large-push-3">
+	                					<h2>Pup Named Oliver</h2>
+	                					<h6><a href="http://pupnamedoliver.jns6971.com/" title="View Pup Named Oliver Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a></h6>
+	                				</div>
+	                				<div class="column small-12 medium-4 medium-pull-8 large-3 large-pull-9">
+                                        <a href="http://pupnamedoliver.jns6971.com/" title="View Pup Named Oliver Website" target="_blank">
+	                					  <img class="portfolio-example" src="/img/projects/oliver-screenshot-2.jpg" alt="Pup Named Oliver Website Screenshot">
+                                        </a>
+	                				</div>
+                				</div>
+                                <div class="row">
+                                    <div class="column small-12 portfolio-modal-details">
+                                        <h4>Overview</h4>
+                                        <p><a href="http://pupnamedoliver.jns6971.com/" title="View Pup Named Oliver Website" target="_blank">Pup Named Oliver</a> is a personal microsite that shows off my dog, Oliver. When I adopted Oliver back in 2014, friends and family wanted to see pictures of him. My solution was to create a site that compiles all of those pictures.</p>
+                                        <h4>Details</h4>
+                                        <ul>
+                                            <li>The images and data are lazy loaded from a <acronym title="Javascript Object Notation"><strong>json</strong></acronym> file.</li>
+                                            <li>The scroll based animations where hand-coded using <acronym title="Cascading Style Sheet 3"><strong>CSS3</strong></acronym>, <strong>jQuery</strong>, <strong>Greensock</strong>.</li>
+                                            <li>Behind the scenes I use <strong>Gulp</strong> to manage the development build and distribution processes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                				<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                			</article>
                 		</li>
+
+                        <!-- CUrrency Cap -->
+                		<li class="portfolio-item">
+	                		<div class="portfolio-item-wrapper" data-reveal-id="currency-modal">
+	                			<img class="portfolio-example" src="/img/projects/imca-screenshot-sm.jpg" alt="Currency Cap Website">
+	                			<div class="portfolio-item-details">
+                					<h3>Currency Cap</h3>
+                				</div>
+                			</div>
+
+                            <article id="currency-modal" data-reveal class="modal portfolio-modal" aria-labelledby="Currency Cap Modal" aria-hidden="true" role="dialog">
+                                <div class="row">
+                                    <div class="column small-12 medium-8 medium-push-4 large-9 large-push-3">
+                                        <h2>Currency Cap</h2>
+                                        <h6><a href="http://currencycap.com/" title="View Currency Cap Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a></h6>
+                                    </div>
+                                    <div class="column small-12 medium-4 medium-pull-8 large-3 large-pull-9">
+                                        <a href="http://currencycap.com/" title="View Currency Cap Website" target="_blank">
+                                          <img class="portfolio-example" src="/img/projects/imca-screenshot-2.jpg" alt="Currency Cap Website Screenshot">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column small-12 portfolio-modal-details">
+                                        <h4>Overview</h4>
+                                        <p>During my time at Phenomenon, I helped develop <a href="http://currencycap.com/" title="View Currency Cap Website" target="_blank">Currency Cap</a> which was a rebranding project. The rebranding goals were to create less generic business look for the company and included an interactive flow to picking out the best loan for the user.</p>
+                                        <h4>Details</h4>
+                                        <ul>
+                                            <li>This site was built using <strong>Angular</strong>, <strong>Sass</strong>, <strong>Bootstrap</strong> and <strong>Jade Templating</strong>.</li>
+                                            <li>Behind the scenes I used <strong>Docker</strong> as a development environment and <strong>node.js</strong> to run the development build.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                            </article>
+                		</li>
+
+                        <!-- Phenomenon Work -->
+                		<li class="portfolio-item">
+                			<div class="portfolio-item-wrapper" data-reveal-id="vcu-modal">
+                				<img class="portfolio-example" src="/img/projects/vcu-screenshot-sm.jpg" alt="V.C.U. Work Website">
+                				<div class="portfolio-item-details">
+                					<h3>Phenomenon</h3>
+                				</div>
+                			</div>
+
+                            <article id="vcu-modal" data-reveal class="modal portfolio-modal" aria-labelledby="V.C.U. Modal" aria-hidden="true" role="dialog">
+                                <div class="row">
+                                    <div class="column small-12 medium-8 medium-push-4 large-9 large-push-3">
+                                        <h2>Phenomenon Work</h2>
+                                        <h6><a href="http://work.phenomenon.com/" title="View Phenomenon Work Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a></h6>
+                                    </div>
+                                    <div class="column small-12 medium-4 medium-pull-8 large-3 large-pull-9">
+                                        <a href="http://work.phenomenon.com/" title="View Phenomenon Work Website" target="_blank">
+                                          <img class="portfolio-example" src="/img/projects/vcu-screenshot-2.jpg" alt="Currency Cap Website Screenshot">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column small-12 portfolio-modal-details">
+                                        <h4>Overview</h4>
+                                        <p><a href="http://work.phenomenon.com/" title="View Phenomenon Work Website" target="_blank">Phenomenon Work</a> is a landing site to show off the marking work Phenomenon did for Wilson X, Wilson Anthem, thinkThin and Xome.</p>
+                                        <h4>Details</h4>
+                                        <ul>
+                                            <li>This site was built using <strong>Angular</strong>, <strong>Sass</strong>, <strong>Bootstrap</strong> and <strong>Jade Templating</strong>.</li>
+                                            <li>I build this site to meet basic level of <strong>accessability</strong>, <strong>responsive design</strong> practices, and support browsers IE10 and up.</li>
+                                            <li>Behind the scenes I used <strong>Docker</strong> as a development environment and <strong>node.js</strong> to run the development build.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                            </article>
+                		</li>
+
+                        <!-- Voya -->
+                        <li class="portfolio-item">
+                            <div class="portfolio-item-wrapper" data-reveal-id="voya-modal">
+                                <img class="portfolio-example" src="/img/projects/voya-logo-sm.jpg" alt="Voya Work Website">
+                                <div class="portfolio-item-details">
+                                    <h3>Voya</h3>
+                                </div>
+                            </div>
+
+                            <article id="voya-modal" data-reveal class="modal portfolio-modal" aria-labelledby="Voya Modal" aria-hidden="true" role="dialog">
+                                <div class="row">
+                                    <div class="column small-12 medium-8 medium-push-4 large-9 large-push-3">
+                                        <h2>Voya Enrollment</h2>
+                                    </div>
+                                    <div class="column small-12 medium-4 medium-pull-8 large-3 large-pull-9">
+                                        <img class="portfolio-example" src="/img/projects/voya-logo-2.jpg" alt="Voya Logo Screenshot">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column small-12 portfolio-modal-details">
+                                        <h4>Overview</h4>
+                                        <p>this goes here</p>
+                                        <h4>Details</h4>
+                                        <ul>
+                                            <li>this</li>
+                                            <li>that</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column small-12 modal-video text-center">
+                                        <iframe id="player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/EX0H72ou0hc?enablejsapi=1&origin=http://www.jns6971.com" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                            </article>
+                        </li>
+
+
+                        <!-- Ascena -->
+                        <li class="portfolio-item">
+                            <div class="portfolio-item-wrapper" data-reveal-id="ascena-modal">
+                                <img class="portfolio-example" src="/img/projects/ascena-logo-sm.jpg" alt="Ascena Retail Sub-brand Logos">
+                                <div class="portfolio-item-details">
+                                    <h3>Ascena</h3>
+                                </div>
+                            </div>
+
+                            <article id="ascena-modal" data-reveal class="modal portfolio-modal" aria-labelledby="Ascena Modal" aria-hidden="true" role="dialog">
+                                <div class="row">
+                                    <div class="column small-12 medium-8 medium-push-4 large-9 large-push-3">
+                                        <h2>Ascena Retail</h2>
+                                    </div>
+                                    <div class="column small-12 medium-4 medium-pull-8 large-3 large-pull-9">
+                                        <img class="portfolio-example" src="/img/projects/ascena-logo-2.jpg" alt="Logos for Dressbarn, Lane Bryant, Maurices, and Catherines">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column small-12 portfolio-modal-details">
+                                        <h4>Overview</h4>
+                                        <p>this goes here</p>
+                                        <h4>Details</h4>
+                                        <ul>
+                                            <li>this</li>
+                                            <li>that</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column small-12">
+                                        <div class="owl-carousel">
+                                            <div>
+                                                <a href="http://www.dressbarn.com/" title="Dressbarn Website" target="_blank">
+                                                    <img src="/img/projects/dressbarn-screenshot.jpg" alt="Screenshot of Dressbarn website">
+                                                </a>
+                                                <a href="http://www.dressbarn.com/" title="Dressbarn Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.lanebryant.com/" title="Lane Bryant Website" target="_blank">
+                                                    <img src="/img/projects/lane-bryant-screenshot.jpg" alt="Screenshot of Lane Bryant website">
+                                                </a>
+                                                <a href="http://www.lanebryant.com/" title="Lane Bryant Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.maurices.com/" title="Maurices Website" target="_blank">
+                                                    <img src="/img/projects/maurices-screenshot.jpg" alt="Screenshot of Maurices website">
+                                                </a>
+                                                <a href="http://www.maurices.com/" title="Maurices Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://catherines.lanebryant.com/" title="Catherines Website" target="_blank">
+                                                    <img src="/img/projects/catherines-screenshot.jpg" alt="Screenshot of Catherines website">
+                                                </a>
+                                                <a href="http://catherines.lanebryant.com/" title="Catherines Website" target="_blank">View Website <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                            </article>
+                        </li>
+
                 	</ul>
                 </div>
             </div>
@@ -144,13 +355,8 @@
 	<script src="scripts/lib/jquery.js"></script>
 	<script src="scripts/lib/foundation.min.js"></script>
 	<script src="scripts/lib/detectmobilebrowser.js"></script>
+    <script src="scripts/lib/owl.carousel.min.js"></script>
 	<script src="scripts/main.js"></script>
-
-	<div id="oliver-modal" data-reveal class="modal" aria-labelledby="Pup Named Oliver Modal" aria-hidden="true" role="dialog">
-		<h2>Oliver Modal</h2>
-		<p>Here is my test modal</p>
-		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-	</div>
 
 </body>
 </html>

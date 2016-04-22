@@ -49,13 +49,11 @@
     #{$property}: $remValues;
 }
 
-// @include transition(color, 0.2s, ease-in-out);
-@mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -moz-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
 }
 
 @mixin round-corners($amount) {
@@ -64,10 +62,11 @@
     -webkit-border-radius: $amount;
 }
 
-@mixin box-shadow($top, $left, $blur, $spread, $color, $inset:"") {
-    -webkit-box-shadow: $top $left $blur $spread $color #{$inset};
-    -moz-box-shadow: $top $left $blur $spread $color #{$inset};
-    box-shadow: $top $left $blur $spread $color #{$inset};
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
 }
 
 @mixin placeholder {
@@ -128,3 +127,8 @@
 // @include skew(12);            skews object 12 degrees
 // @include translate(10, -20);  moves object 10px left, -20px top
 
+@mixin grayscale($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
