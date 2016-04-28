@@ -76,4 +76,6 @@ nbproject
 node_modules
 bower_components
 build
+dist
 styles/css
+server-cred.json

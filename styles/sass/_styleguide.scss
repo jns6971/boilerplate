@@ -207,6 +207,23 @@ section{
 	}
 }
 
+.owl-carousel{
+	padding: 0 50px;
+}
+
+.owl-item{
+	padding: 20px;
+
+	a{
+		padding: 10px 0;
+		font-size: 15px;
+
+		.fa-arrow-right{
+			font-size: 10px;
+		}
+	}
+}
+
 .no-js{
 	
 }
