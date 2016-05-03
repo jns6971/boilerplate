@@ -20,6 +20,27 @@
 	<meta name="description" content="TODO:Populate">
 	<meta name="author" content="Jordan Simon">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#A291FF">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#A291FF">
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#A291FF">
+
 	<script src="scripts/lib/modernizr.js"></script>
     <script src="scripts/lib/css_browser_selector.js"></script>
 
@@ -42,8 +63,8 @@
     </header>
 
     <!-- Navigation -->
-	<nav class="sticky portfolioMenu" id="portfolioMenu">
-	    <div class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+	<nav class="sticky contain-to-grid portfolioMenu" id="portfolioMenu">
+	    <div class="top-bar" data-topbar role="navigation">
 	    	<div class="row">
 		    	<div class="small-12 columns">
 			    	<div class="top-bar-section">
@@ -51,16 +72,29 @@
 				    		<h2>Jordan Simon</h2>
 				    	</div>
 			    	</div>
-			    	<div class="top-bar-section hide-for-small-only">
+			    	<div class="top-bar-section">
 				    	<div class="right">
-				    		<ul class="menu" role="menu">
-				    			<li data-magellan-arrival="about" role="menuitem"><a href="#about">About</a></li>
-				    			<li data-magellan-arrival="skills" role="menuitem"><a href="#skills">Skills</a></li>
-				    			<li data-magellan-arrival="portfolio" role="menuitem"><a href="#portfolio">Portfolio</a></li>
-				    			<li data-magellan-arrival="contact" role="menuitem"><a href="#contact">Contact</a></li>
-				    		</ul>
+				    		<ul class="menu show-for-medium-up" role="menu">
+                                <li role="menuitem"><a href="#about">About</a></li>
+                                <li role="menuitem"><a href="#skills">Skills</a></li>
+                                <li role="menuitem"><a href="#portfolio">Portfolio</a></li>
+                                <li role="menuitem"><a href="#contact">Contact</a></li>
+                            </ul>
+                            <!-- <div class="hide-for-large-up" data-offcanvas>
+                                <a role="button" href="#">menu</a>
+                            </div> -->
 				    	</div>
 			    	</div>
+                    <!-- <div class="top-bar-section row collapse hide-for-large-up">
+                        <div class="small-12 columns collapse-menu open">
+                            <ul class="menu show-for-large-up" role="menu">
+                                <li role="menuitem"><a href="#about">About</a></li>
+                                <li role="menuitem"><a href="#skills">Skills</a></li>
+                                <li role="menuitem"><a href="#portfolio">Portfolio</a></li>
+                                <li role="menuitem"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
 		    	</div>
 		    </div>
 	    </div>

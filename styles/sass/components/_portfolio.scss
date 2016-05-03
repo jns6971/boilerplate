@@ -9,25 +9,26 @@ $nav-animate-time: .25s;
 	color: #FFF;
 	text-transform: uppercase;
     font-weight: 800;
-    height: 65px;
 
     .menu{
     	text-transform: uppercase;
     }
 
     h2{
-    	font-family: $nav-font;
+    	font-family: $rs-secondary-font;
 		color: #FFF;
 		text-transform: uppercase;
     	font-weight: 800;
     	margin: 0;
     	line-height: 45px;
+    	letter-spacing: 2px;
     }
 
     .top-bar{
     	height: auto;
     	padding: $base-spacing-unit $base-spacing-unit-custom;
     	@include transition(padding $base-animate-time ease-in-out);
+    	
     }
 
     &.fixed{
@@ -39,11 +40,11 @@ $nav-animate-time: .25s;
     @media #{$small-only} {
     	.top-bar{
     		text-align: center;
-    		padding: $base-spacing-unit-custom 0;
+    		padding: $base-spacing-unit-custom;
     	}
     	&.fixed{
 	    	.top-bar{
-	    		padding: $base-spacing-unit-custom 0;
+	    		padding: $base-spacing-unit-custom;
 	    	}
 	    }
     	h2{
@@ -206,7 +207,16 @@ $nav-animate-time: .25s;
 .f-topbar-fixed{
 	.bio{
 		padding-top: 165px;
+
+		@media #{$small-only} {
+			padding-top: 105px;
+		}
 	}
+	// @media #{$small-only} {
+	// 	.bio{
+	// 		padding-top: 105px;
+	// 	}
+	// }
 }
 .bio{
 	padding-top: 105px;
