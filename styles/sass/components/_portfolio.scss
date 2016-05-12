@@ -79,7 +79,7 @@ $nav-animate-time: .25s;
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background: url("/img/hero-space.jpg");
+		background: url("/img/hero-space-opt.jpg");
 		opacity: 0.5;
 		background-size: cover;
 		background-position: center;
@@ -105,7 +105,7 @@ $nav-animate-time: .25s;
   			font-weight: 800;
 			color: transparent;
 			font-size: 180px;
-			background: url("/img/hero-space.jpg") repeat;
+			background: url("/img/hero-space-opt.jpg") repeat;
 			background-position: 50% 50%;
 			background-size: 200% auto;
 			-webkit-background-clip: text;
@@ -167,7 +167,7 @@ $nav-animate-time: .25s;
 
 }
 
-.chrome, .opera, .safari{
+.chrome, .opera, .safari, .mobile, .android, .iphone, .tablet{
 	.portfolioHero{
 		.heroBackgroundWrapper{
 			display: block;
@@ -262,6 +262,7 @@ $nav-animate-time: .25s;
 	text-align: center;
 
 	h3{
+		font-family: $rs-tertiary-font;
 		margin: 0;
 		color: #fff;
 	}

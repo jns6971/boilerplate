@@ -56,6 +56,10 @@
 			});
 		}
 
+		$(window).on('resize', function(){
+			heroHeight = $hero.outerHeight();
+		});
+
 		// $document.scroll(function(){
 		// 	var scrollDif = Math.round(($document.scrollTop() / heroHeight) * 100) / 100;
 			
@@ -104,5 +108,7 @@
 	// 	});
 	// });
 
+	//remove loader
+	$('.loader-overlay').fadeOut();
 
 }(jQuery));
