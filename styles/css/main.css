@@ -383,6 +383,27 @@ th {
   font-style: normal; }
 
 @font-face {
+  font-family: 'roboto_condensedbold';
+  src: url("/fonts/roboto/RobotoCondensed-Bold-webfont.eot");
+  src: url("/fonts/roboto/RobotoCondensed-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto/RobotoCondensed-Bold-webfont.woff") format("woff"), url("/fonts/roboto/RobotoCondensed-Bold-webfont.ttf") format("truetype"), url("/fonts/roboto/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("/fonts/roboto/Roboto-Bold-webfont.eot");
+  src: url("/fonts/roboto/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto/Roboto-Bold-webfont.woff") format("woff"), url("/fonts/roboto/Roboto-Bold-webfont.ttf") format("truetype"), url("/fonts/roboto/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url("/fonts/roboto/RobotoSlab-Regular-webfont.eot");
+  src: url("/fonts/roboto/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto/RobotoSlab-Regular-webfont.woff") format("woff"), url("/fonts/roboto/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("/fonts/roboto/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'icomoon';
   src: url("/fonts/icons/icomoon.eot?iwcs12");
   src: url("/fonts/icons/icomoon.eot?#iefixiwcs12") format("embedded-opentype"), url("/fonts/icons/icomoon.woff?iwcs12") format("woff"), url("/fonts/icons/icomoon.ttf?iwcs12") format("truetype"), url("/fonts/icons/icomoon.svg?iwcs12#icomoon") format("svg");
@@ -9026,13 +9047,15 @@ button, .button {
   font-weight: 800; }
 
 nav .top-bar-section ul li a {
-  font-weight: 800;
-  text-transform: uppercase; }
+  font-family: "robotobold", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 section {
   padding: 80px 0; }
   section h2 {
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    font-family: "roboto_slabregular", sans-serif; }
   section:nth-child(odd) {
     background-color: #FFF; }
     section:nth-child(odd) .button {
@@ -9101,6 +9124,86 @@ section {
     bottom: 40px !important;
     overflow-y: auto; }
 
+.owl-carousel {
+  padding: 0 50px; }
+
+.owl-item {
+  padding: 20px; }
+  .owl-item a {
+    padding: 10px 0;
+    font-size: 15px; }
+    .owl-item a .fa-arrow-right {
+      font-size: 10px; }
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: #A291FF;
+  z-index: 1000; }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  font-size: 10px;
+  margin: -50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0); }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ''; }
+  .loader:after {
+    background-color: #A291FF;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 .visuallyhidden {
   overflow: hidden;
   height: 0;
@@ -9117,17 +9220,17 @@ body {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFF;
   text-transform: uppercase;
-  font-weight: 800;
-  height: 65px; }
+  font-weight: 800; }
   .portfolioMenu .menu {
     text-transform: uppercase; }
   .portfolioMenu h2 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "robotobold", Arial, sans-serif;
     color: #FFF;
     text-transform: uppercase;
     font-weight: 800;
     margin: 0;
-    line-height: 45px; }
+    line-height: 45px;
+    letter-spacing: 2px; }
   .portfolioMenu .top-bar {
     height: auto;
     padding: 40px 10px;
@@ -9140,9 +9243,9 @@ body {
   @media only screen and (max-width: 40em) {
     .portfolioMenu .top-bar {
       text-align: center;
-      padding: 10px 0; }
+      padding: 10px; }
     .portfolioMenu.fixed .top-bar {
-      padding: 10px 0; }
+      padding: 10px; }
     .portfolioMenu h2 {
       font-size: 1.25em; } }
 
@@ -9165,7 +9268,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url("/img/hero-space.jpg");
+    background: url("/img/hero-space-opt.jpg");
     opacity: 0.5;
     background-size: cover;
     background-position: center;
@@ -9186,7 +9289,7 @@ body {
       font-weight: 800;
       color: transparent;
       font-size: 180px;
-      background: url("/img/hero-space.jpg") repeat;
+      background: url("/img/hero-space-opt.jpg") repeat;
       background-position: 50% 50%;
       background-size: 200% auto;
       -webkit-background-clip: text;
@@ -9225,10 +9328,10 @@ body {
     .portfolioHero .heroBackgroundFallback {
       background-image: url("/img/bg-fallback.jpg"); } }
 
-.chrome .portfolioHero .heroBackgroundWrapper, .opera .portfolioHero .heroBackgroundWrapper, .safari .portfolioHero .heroBackgroundWrapper {
+.chrome .portfolioHero .heroBackgroundWrapper, .opera .portfolioHero .heroBackgroundWrapper, .safari .portfolioHero .heroBackgroundWrapper, .mobile .portfolioHero .heroBackgroundWrapper, .android .portfolioHero .heroBackgroundWrapper, .iphone .portfolioHero .heroBackgroundWrapper, .tablet .portfolioHero .heroBackgroundWrapper {
   display: block; }
 
-.chrome .portfolioHero .heroBackgroundFallback, .opera .portfolioHero .heroBackgroundFallback, .safari .portfolioHero .heroBackgroundFallback {
+.chrome .portfolioHero .heroBackgroundFallback, .opera .portfolioHero .heroBackgroundFallback, .safari .portfolioHero .heroBackgroundFallback, .mobile .portfolioHero .heroBackgroundFallback, .android .portfolioHero .heroBackgroundFallback, .iphone .portfolioHero .heroBackgroundFallback, .tablet .portfolioHero .heroBackgroundFallback {
   display: none; }
 
 .contact ul {
@@ -9250,6 +9353,9 @@ body {
 
 .f-topbar-fixed .bio {
   padding-top: 165px; }
+  @media only screen and (max-width: 40em) {
+    .f-topbar-fixed .bio {
+      padding-top: 105px; } }
 
 .bio {
   padding-top: 105px; }
@@ -9292,6 +9398,7 @@ body {
   background-color: #A291FF;
   text-align: center; }
   .portfolio-item-details h3 {
+    font-family: "roboto_slabregular", sans-serif;
     margin: 0;
     color: #fff; }
 
