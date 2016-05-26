@@ -1,11 +1,76 @@
-(function($){
-
-	// activate foundation js
-	$(document).foundation();
+(function($){	
 
 
-	// Hero background js
-	$(document).ready(function(){
+	function Portfolio(customObject){
+		//setup default attributes
+		this.attr = {
+			'$overlay': $('.loader-overlay'),
+			'$carousel': $('.owl-carousel'),
+			'$document': $(document)
+		};
+
+		this.init(customObject);
+	}
+
+	Portfolio.prototype.init = function(customObject){
+		//overwriter default attributes with custom attributes
+		this.attr = $.extend({}, this.attr, customObject);
+
+		//start app listeners
+		this.setupListeners();
+
+		this.onRender();
+
+		this.afterRender();
+	}
+
+	Portfolio.prototype.setupListeners = function(){
+		
+	}
+
+	Portfolio.prototype.onRender = function(){
+
+		this.attr.$document.foundation();
+
+		this.heroModule();
+
+		this.attr.$carousel.owlCarousel({
+			'loop': true,
+			'margin': 10,
+			'nav': true
+		});
+
+		//remove loader
+		//add scroll jacker
+		// $(function(){
+		// 	$('.scroll').click(function(){
+		// 		$('html,body').animate({
+		// 			'scrollTop': $('#target').offset().top
+		// 		},'500');
+		// 		return false;
+		// 	});
+		// });
+
+
+		// $(document).on('open.fndtn.reveal', '[data-reveal]', function(e){ 
+		// 	console.log('open says a me: ', e);
+		// 	var videoEl = $(e.target).find('#video'),
+		// 		videoId;
+
+		// 		console.log(videoEl);
+
+		// 		debugger;
+
+		// 	if(videoEl.length > 0){
+		// 		videoId = videoEl.data('video-id');
+
+		// 		console.log('videoId: ',videoId);
+		// 	}
+		// });
+
+	}
+
+	Portfolio.prototype.heroModule = function(){
 		var percX, percY, tiltX, tiltY,
 			oldMax = 100,
 			oldMin = 0,
@@ -69,46 +134,13 @@
 		// 	}
 		// });
 
+	}
 
+	Portfolio.prototype.afterRender = function(){
+		//remove loader
+		this.attr.$overlay.fadeOut();
+	}
 
-
-
-		// $(document).on('open.fndtn.reveal', '[data-reveal]', function(e){ 
-		// 	console.log('open says a me: ', e);
-		// 	var videoEl = $(e.target).find('#video'),
-		// 		videoId;
-
-		// 		console.log(videoEl);
-
-		// 		debugger;
-
-		// 	if(videoEl.length > 0){
-		// 		videoId = videoEl.data('video-id');
-
-		// 		console.log('videoId: ',videoId);
-		// 	}
-		// });
-
-		$(".owl-carousel").owlCarousel({
-			'loop': true,
-			'margin': 10,
-			'nav': true
-		});
-
-
-	});
-
-	//add scroll jacker
-	// $(function(){
-	// 	$('.scroll').click(function(){
-	// 		$('html,body').animate({
-	// 			'scrollTop': $('#target').offset().top
-	// 		},'500');
-	// 		return false;
-	// 	});
-	// });
-
-	//remove loader
-	$('.loader-overlay').fadeOut();
+	var app = new Portfolio({});
 
 }(jQuery));

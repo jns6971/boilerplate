@@ -4,7 +4,7 @@
 - ```cd``` to new project directory
 - ```npm install```
 - ```bower install```
-- run ```gulp```
+- run ```gulp watch```
 
 
 ## Contents
