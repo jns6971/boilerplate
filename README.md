@@ -6,8 +6,11 @@
 - ```cd``` to new project directory
 - ```npm install```
 - ```bower install```
-- run ```gulp watch```
+- run `gulp watch` which compiles sass and browserify
 
+## Delopyment
+- `gulp dist` generates a distribution directory which optimizes all files for production
+- `gulp deploy` ftp the distribution directory to the server
 
 ## Contents
 - Gulp (sass, browserify & watch)

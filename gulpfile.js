@@ -79,8 +79,6 @@ gulp.task('images', function(cb) {
 });
 
 gulp.task( 'deploy', function () {
-
-
     var conn = ftp.create( {
         'host': credentials.host,
         'user': credentials.user,
@@ -107,5 +105,6 @@ gulp.task('clean', function () {
 
 //Watch task
 gulp.task('dist', ['clean', 'copy', 'js-minify', 'css-minify', 'images']);
+
 
 gulp.task('default', ['styles', 'scripts', 'watch']);
