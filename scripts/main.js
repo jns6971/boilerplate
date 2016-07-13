@@ -6,7 +6,10 @@
 		this.attr = {
 			'$overlay': $('.loader-overlay'),
 			'$carousel': $('.owl-carousel'),
-			'$document': $(document)
+			'$document': $(document),
+			'$body': $('html,body'),
+			'$navLinks': $('#portfolioMenu ul.menu a'),
+			'$nav': $('nav.sticky')
 		};
 
 		this.init(customObject);
@@ -16,41 +19,15 @@
 		//overwriter default attributes with custom attributes
 		this.attr = $.extend({}, this.attr, customObject);
 
-		//start app listeners
-		this.setupListeners();
-
 		this.onRender();
+
+		this.setupListeners();
 
 		this.afterRender();
 	}
 
 	Portfolio.prototype.setupListeners = function(){
-		
-	}
-
-	Portfolio.prototype.onRender = function(){
-
-		this.attr.$document.foundation();
-
-		this.heroModule();
-
-		this.attr.$carousel.owlCarousel({
-			'loop': true,
-			'margin': 10,
-			'nav': true
-		});
-
-		//remove loader
-		//add scroll jacker
-		// $(function(){
-		// 	$('.scroll').click(function(){
-		// 		$('html,body').animate({
-		// 			'scrollTop': $('#target').offset().top
-		// 		},'500');
-		// 		return false;
-		// 	});
-		// });
-
+		this.setupScrollListener();
 
 		// $(document).on('open.fndtn.reveal', '[data-reveal]', function(e){ 
 		// 	console.log('open says a me: ', e);
@@ -67,7 +44,59 @@
 		// 		console.log('videoId: ',videoId);
 		// 	}
 		// });
+	}
 
+	Portfolio.prototype.onRender = function(){
+
+		this.attr.$document.foundation();
+
+		this.heroModule();
+
+		this.attr.$carousel.owlCarousel({
+			'loop': true,
+			'margin': 10,
+			'nav': true
+		});
+	}
+
+	//setup
+	Portfolio.prototype.setupScrollListener = function(){
+		var that = this;
+
+		this.attr.$navLinks.click(function(e) { 
+			// Prevent a page reload when a link is pressed
+			e.preventDefault(); 
+			// Call the scroll function
+			that.smoothScroll(this.hash.substr(1));
+		});
+	}
+
+	//scroll to id of nav item clicked
+	Portfolio.prototype.smoothScroll = function(id){
+		var that = this,
+			navOffset = -1;
+		// Remove "link" from the ID
+		id = id.replace("link", "");
+		// Scroll
+
+		//custom write offset if sticky nav is fixed or not
+		if(this.attr.$nav.hasClass('fixed')){
+			if(id !== 'about'){
+				navOffset = 75;
+			}
+		}
+		else{
+			if(id === 'about'){
+				navOffset = 135;
+			}
+			else{
+				navOffset = 150;
+			}
+		}
+
+		this.attr.$body.animate({
+			scrollTop: $("#"+id).offset().top - navOffset},
+		500);
 	}
 
 	Portfolio.prototype.heroModule = function(){
