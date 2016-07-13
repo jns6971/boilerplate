@@ -1,6 +1,6 @@
 # Portfolio
 
-[www.jns6971.com](https://www.jns6971.com)
+[www.jns6971.com](www.jns6971.com)
 
 ## Setup
 - ```cd``` to new project directory
