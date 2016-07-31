@@ -11,6 +11,7 @@
 ## Delopyment
 - `gulp dist` generates a distribution directory which optimizes all files for production
 - `gulp deploy` ftp the distribution directory to the server
+- `gulp clean` removes dist folder and contents
 
 ## Contents
 - Gulp (sass, browserify & watch)
