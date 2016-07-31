@@ -9238,6 +9238,9 @@ body {
     -o-transition: padding 0.25s ease-in-out;
     -webkit-transition: padding 0.25s ease-in-out;
     transition: padding 0.25s ease-in-out; }
+  .portfolioMenu .nav-collapse-menu {
+    position: absolute;
+    bottom: 0; }
   .portfolioMenu.fixed .top-bar {
     padding: 10px 10px; }
   @media only screen and (max-width: 40em) {
@@ -9247,7 +9250,8 @@ body {
     .portfolioMenu.fixed .top-bar {
       padding: 10px; }
     .portfolioMenu h2 {
-      font-size: 1.25em; } }
+      font-size: 1.25em;
+      line-height: 56px; } }
 
 .portfolioHero {
   height: 100%;
