@@ -157,6 +157,28 @@ section{
 }
 
 
+.sliding-underline{
+	display: inline-block;
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0;
+		background: $white;
+		@include transition(width .15s ease-in-out);
+	}
+
+	&:hover{
+		&:after{
+			width: 100%;
+			background-color: $white;
+		}
+	}
+}
+
 
 .modal{
 	border-radius: 3px;

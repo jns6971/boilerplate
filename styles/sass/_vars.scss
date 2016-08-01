@@ -12,6 +12,7 @@ $base-animate-time-fast: .1s;
 $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts" !default;
 
 //colors
+$white: #FFF;
 
 $rs-primary-color: #A291FF;
 $rs-primary-color-dark: #51487F;
@@ -29,6 +30,10 @@ $rs-body-bg: #f2f2f2;
 $rs-section-alt-bg: #f5f5f5;
 
 
+$topbar-bg: #222;
+$topbar-bg-color: #222;
+
+
 //font
 $rs-font: 'Lato_regular', sans-serif;
 $rs-font-bold: 'Lato_bold', sans-serif;
@@ -39,6 +44,19 @@ $rs-tertiary-font: 'roboto_slabregular', sans-serif;
 
 $nav-font: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
-//font size
-// $h1-font-size: 3em;
-// $h2-font-size: 2em;
+
+// Background color for the top bar
+// $topbar-bg-color: $oil;
+// $topbar-bg: $topbar-bg-color;
+
+// Set the link colors and styles for top-level nav
+$topbar-link-color: $white;
+$topbar-link-color-hover: $white;
+$topbar-link-color-active: $white;
+$topbar-link-color-active-hover: $white;
+// $topbar-link-weight: $font-weight-normal;
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $topbar-bg;
+$topbar-link-bg-color-hover: blue;
+// $topbar-link-bg-active: $primary-color;
+// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
