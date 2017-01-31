@@ -37,6 +37,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "optipng-bin": "^3.1.2",
     "vinyl-ftp": "^0.4.5"
   }
 }

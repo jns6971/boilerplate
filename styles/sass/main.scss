@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
-@import "vars",
+@import 		"bower_components/foundation/scss/foundation/settings",
+		"bower_components/foundation/scss/foundation/functions",
+		"vars",
 		"bower_components/foundation/scss/normalize",
 		"fonts",
+
 		"bower_components/foundation/scss/foundation",
 		"bower_components/font-awesome/scss/font-awesome",
 		"bower_components/OwlCarousel/owl-carousel/owl.carousel",
