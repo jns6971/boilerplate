@@ -1,5 +1,4 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
 import './index.css';
 
 const Header = ({ siteTitle }) => (
@@ -17,16 +16,12 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
+      <h1 style={{ 
+        margin: 0,
+        color: 'white',
+        textDecoration: 'none'
+      }}>
+        {siteTitle}
       </h1>
     </div>
   </header>

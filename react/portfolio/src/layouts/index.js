@@ -1,9 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Header from '../components/organisms/header'
-import './index.css'
+import Header from '../components/organisms/header';
+import Nav from '../components/organisms/nav';
+import './index.css';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -15,6 +16,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
+    <Nav />
     <div
       style={{
         margin: '0 auto',
